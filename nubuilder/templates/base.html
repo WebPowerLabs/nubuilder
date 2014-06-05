@@ -14,10 +14,7 @@
 
     {% block css %}
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% block bootstrap_css %}//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css{% endblock bootstrap_css %}">
 
     <!-- Your stuff: Third-party css libraries go here -->
 

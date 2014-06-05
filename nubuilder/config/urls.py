@@ -29,5 +29,6 @@ urlpatterns = patterns('',
     url(r'^avatar/', include('avatar.urls')),
 
     # Your stuff: custom urls go here
+    url(r'^', include('nupages.urls', namespace='nupages')),
 
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
