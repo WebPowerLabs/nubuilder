@@ -35,4 +35,4 @@ django-avatar==2.0
 
 
 # Your custom requirements go here
-django-nupages==0.1.6
+django-nupages==0.1.7
