@@ -1,7 +1,5 @@
-{% extends "base.html" %}
+{% extends "nupages/tenants/2/base.html" %}
 {% load staticfiles i18n %}
-
-{% block title %}Jackson Tile & Design{% endblock title %}
 
 {% block navbar %}
   <!-- TRANSPARENT NAVBAR
@@ -21,10 +19,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="/pages">Home</a></li>
+            <li><a href="/pages/about">About</a></li>
+            <li><a href="/pages/services">Services</a></li>
+            <li><a href="/pages/gallery">Gallery</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -63,22 +61,22 @@
         </div><!--/ .row-->
         <div class="row">
           <div class="content-box col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-            <a href="#"><i class="icon fa fa-gears"></i></a>
+            <a href="/pages/services"><i class="icon fa fa-gears"></i></a>
             <h4 class="title">Tile Installation</h4>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique tellus ut lectus suscipit, nec elementum dolor placerat. Proin ut metus vitae purus condimentum dictum a in justo. Nullam luctus cursus fermentum.</p>
-            <a href="#"><h5 class="more-info">Read More &nbsp;<i class="fa fa-arrow-right"></i></h5></a>
+            <a href="/pages/services"><h5 class="more-info">Read More &nbsp;<i class="fa fa-arrow-right"></i></h5></a>
           </div><!--/ .content-box-->
           <div class="content-box col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-            <a href="#"><i class="icon fa fa-group"></i></a>
+            <a href="/pages/services/#wood-laminate"><i class="icon fa fa-group"></i></a>
             <h4 class="title">Wood Flooring</h4>
             <p class="description">Maecenas molestie, libero non ornare aliquam, felis augue volutpat quam, eget ultrices eros metus eu neque. Donec accumsan ultricies nisl. Maecenas ut pellentesque ipsum. Mauris est mi, vestibulum non tristique sit amet.</p>
-            <a href="#"><h5 class="more-info">Read More &nbsp;<i class="fa fa-arrow-right"></i></h5></a>
+            <a href="/pages/services/#wood-laminate"><h5 class="more-info">Read More &nbsp;<i class="fa fa-arrow-right"></i></h5></a>
           </div><!--/ .content-box-->
           <div class="content-box col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-            <a href="#"><i class="icon fa fa-flag"></i></a>
+            <a href="/pages/services/#wood-laminate"><i class="icon fa fa-flag"></i></a>
             <h4 class="title">Laminate Flooring</h4>
             <p class="description">Suspendisse libero nulla, elementum in sollicitudin id, rutrum eget sapien. Nullam ut posuere diam. Nulla id erat id dolor feugiat facilisis non vel urna. Duis consectetur fermentum libero ut gravida.</p>
-            <a href="#"><h5 class="more-info">Read More &nbsp;<i class="fa fa-arrow-right"></i></h5></a>
+            <a href="/pages/services/#wood-laminate"><h5 class="more-info">Read More &nbsp;<i class="fa fa-arrow-right"></i></h5></a>
           </div><!--/ .content-box-->
         </div><!--/ .row-->
       </div><!--/ .container-->
@@ -154,62 +152,5 @@
       </div><!--/ .container-->
     </section>
   <!-- END AFFILIATES SECTION
-  ================================================== -->
-
-  <!-- FOOTER WIDGETS SECTION
-  ================================================== -->
-    <section class="footer-widgets bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="widget col-md-4 col-md-offset-1">
-            <h4 class="title">Contact Us</h4>
-            <hr><!--/ .saparator-->
-            <h5>Jackson Tile & Design</h5>
-            <p>1234 E. Awesome St.<br>
-              Tucson, AZ 85747</p>
-            <p><a href="mailto:jacksontile@gmail.com">jacksontile@gmail.com</a><br>
-              <a href="tel:5202488966">(520) 248-8966</a></p>
-            <div class="social-icons">
-              <a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
-              <a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
-              <a href="http://instagram.com"><i class="fa fa-instagram"></i></a>
-              <a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a>
-            </div><!--/ .social-icons-->
-          </div><!--/ .widget-->
-          <div class="widget col-md-4 col-md-offset-1">
-            <h4 class="title">Newsletter Signup</h4>
-            <hr><!--/ .saparator-->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nibh quam, cursus et lectus in, dignissim tincidunt tellus.</p>
-            <form role="form">
-              <div class="form-group">
-                <input type="email" class="form-control input-lg" placeholder="Email Address">
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control input-lg" placeholder="Password">
-              </div>
-              <input type="submit" class="btn btn-success btn-lg btn-block"></input>
-            </form>
-          </div><!--/ .widget-->
-        </div><!--/ .row-->
-      </div><!--/ .container-->
-    </section>
-  <!-- END FOOTER WIDGETS SECTION
-  ================================================== -->
-
-  <!-- COPYRIGHT FOOTER SECTION
-  ================================================== -->
-    <section class="copyright-footer bg-primary-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <p class="copyright">2014 &copy; <a href="#">Jackson Tile & Design</a>. All rights reserved.</p>
-          </div><!--/ .copyright-->
-          <div class="col-sm-6">
-            <p class="developer">Developed by <a href="http://rabbitholestud.io">Rabbit Hole Studio</a>.</p>
-          </div><!--/ .developer-->
-        </div><!--/ .row-->
-      </div><!--/ .container-->
-    </section>
-  <!-- END COPYRIGHT FOOTER SECTION
   ================================================== -->
 {% endblock content %}

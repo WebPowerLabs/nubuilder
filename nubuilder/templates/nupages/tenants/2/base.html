@@ -1,9 +1,111 @@
 {% extends "base.html" %}
 {% load staticfiles i18n %}
 
-{% block title %}Jackson Tile & Design |{% endblock title %}
+{% block title %}Jackson Tile & Design{% endblock title %}
 
 {% block css %}
-  <!-- Minified CSS from Bootstrap Builder-->
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+  <!-- Minified Theme Styles from Bootstrap Builder-->
   <link rel="stylesheet" href="{% static 'css/jackson-tile.min.css' %}">
 {% endblock css %}
+
+{% block navbar %}
+  <!-- DEFAULT NAVBAR
+  ================================================== -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Jackson Tile & Design</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/pages">Home</a></li>
+            <li><a href="/pages/about">About</a></li>
+            <li><a href="/pages/services">Services</a></li>
+            <li><a href="/pages/gallery">Gallery</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  <!-- END DEFAULT NAVBAR
+  ================================================== -->
+{% endblock navbar %}
+
+{% block content %}
+{% endblock content %}
+
+{% block footer %}
+  <!-- FOOTER WIDGETS SECTION
+  ================================================== -->
+    <section class="footer-widgets bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="widget col-md-4 col-md-offset-1">
+            <h4 class="title">Contact Us</h4>
+            <hr><!--/ .saparator-->
+            <h5>Jackson Tile & Design</h5>
+            <p>1234 E. Awesome St.<br>
+              Tucson, AZ 85747</p>
+            <p><a href="mailto:jacksontile@gmail.com">jacksontile@gmail.com</a><br>
+              <a href="tel:5202488966">(520) 248-8966</a></p>
+            <div class="social-icons">
+              <a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+              <a href="http://pinterest.com"><i class="fa fa-pinterest"></i></a>
+              <a href="http://instagram.com"><i class="fa fa-instagram"></i></a>
+              <a href="https://plus.google.com/114069048791019059655"><i class="fa fa-google-plus"></i></a>
+            </div><!--/ .social-icons-->
+          </div><!--/ .widget-->
+          <div class="widget col-md-4 col-md-offset-1">
+            <h4 class="title">Newsletter Signup</h4>
+            <hr><!--/ .saparator-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nibh quam, cursus et lectus in, dignissim tincidunt tellus.</p>
+            <!-- - - - CONSTANT CONTACT FORM - - - -->
+            <form method="post" action="https://www.formstack.com/forms/index.php" id="fsForm1867449">
+              <input type="hidden" name="form" value="1867449">
+              <input type="hidden" name="viewkey" value="8yNcCY0F1x">
+              <input type="hidden" name="_submit" value="1">
+              <div class="form-group">
+                <input type="text" id="field28554111" name="field28554111" size="50" value="" required="required" aria-required="true" class="form-control input-lg" placeholder="First Name*">
+              </div>
+              <div class="form-group">
+                <input type="email" id="field28554110" name="field28554110" size="50" required="required" aria-required="true" class="form-control input-lg" placeholder="Email Address*">
+              </div>
+              <div class="form-group">
+                <input id="fsSubmitButton1867449" class="btn btn-success btn-lg btn-block" type="submit" value="Subscribe">
+              </div>
+            </form>
+            <!-- - - -/ CONSTANT CONTACT FORM - - - -->
+          </div><!--/ .widget-->
+        </div><!--/ .row-->
+      </div><!--/ .container-->
+    </section>
+  <!-- END FOOTER WIDGETS SECTION
+  ================================================== -->
+
+  <!-- COPYRIGHT FOOTER SECTION
+  ================================================== -->
+    <section class="copyright-footer bg-primary-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="copyright">2014 &copy; <a href="/pages">Jackson Tile & Design</a>. All rights reserved.</p>
+          </div><!--/ .copyright-->
+          <div class="col-sm-6">
+            <p class="developer">Developed by <a href="http://rabbitholestud.io">Rabbit Hole Studio</a>.</p>
+          </div><!--/ .developer-->
+        </div><!--/ .row-->
+      </div><!--/ .container-->
+    </section>
+  <!-- END COPYRIGHT FOOTER SECTION
+  ================================================== -->
+{% endblock footer %}
