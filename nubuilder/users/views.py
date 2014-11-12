@@ -18,6 +18,40 @@ from .forms import UserForm
 from .models import User
 
 
+from django.shortcuts import render, render_to_response
+from django.views.decorators.csrf import csrf_exempt, csrf_protect
+from django.core.mail import mail_admins, send_mail
+from django.contrib import messages
+from django.contrib.sites.models import Site
+from django.conf import settings
+from django.template import RequestContext
+from django.http import HttpResponseRedirect, Http404, HttpResponse
+
+
+@csrf_protect
+def contact(request):
+    if request.POST:
+        post = request.POST
+        first_name = post.get('first_name')
+        last_name = post.get('last_name')
+        phone = post.get('phone')
+        email = post.get('email')
+        _message = post.get('message')
+        message = 'first_name: {}, last_name: {}, phone: {} email: {}, message: {}'.format(
+            first_name, last_name, phone, email, _message)
+        subject = unicode('Submission from {} {}').format(first_name, last_name)
+        mail_admins(subject, message)
+        _next = post.get('next', '/pages/')
+        messages.success(request, 'Thanks for the submission!')
+        return HttpResponseRedirect(_next)
+
+    _next = request.GET.get('next', '')
+
+    context = {'next': _next}
+    return render_to_response('nupages/tenants/2/home.html',
+        context,
+        context_instance=RequestContext(request))
+
 class UserDetailView(LoginRequiredMixin, DetailView):
     model = User
     # These next two lines tell the view to index lookups by username
