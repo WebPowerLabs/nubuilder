@@ -30,10 +30,10 @@
         <nav class="navbar navbar-default navbar-fixed-bottom navbar-gallery visible-xs" role="navigation">
           <div class="container-fluid">
             <ul class="nav navbar-nav">
-              <li role="presentation"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">
+              <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">
                 <i class="nav-icon fa fa-eye" style="font-size:30px;"></i>
               </a></li>
-              <li role="presentation" class="active"><a href="#tile" aria-controls="tile" role="tab" data-toggle="tab">
+              <li role="presentation"><a href="#tile" aria-controls="tile" role="tab" data-toggle="tab">
                 <i class="nav-icon flaticon-tile2" style="font-size:45px; line-height:36px;"></i>
               </a></li>
               <li role="presentation"><a href="#wood" aria-controls="wood" role="tab" data-toggle="tab">
@@ -51,35 +51,77 @@
             <div role="tabpanel" class="tab-pane fade in active" id="all">
               <div class="row">
                 <div class="col-md-4 col-sm-6 col-masonry">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/tile-floor-exterior.jpg' %}">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/tile-mosaic-wall.jpg' %}">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/tile-shower2.jpg' %}">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/tile-sink.jpg' %}">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/wood-stairs2.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-floor-exterior.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-mosaic-wall.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-shower2.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-sink.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/wood-stairs2.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-shower3.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-floor3.jpg' %}">
                 </div><!--/ .col-masonry-->
                 <div class="col-md-4 col-sm-6 col-masonry">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/wood-stairs.jpg' %}">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/tile-kitchen-sink.jpg' %}">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/tile-fireplace.jpg' %}">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/tile-mosaic-wall2.jpg' %}">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/wood-floor2.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/wood-stairs.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-kitchen-sink.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-fireplace.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-mosaic-wall2.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/wood-floor2.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-floor2.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-kachina2.jpg' %}">
                 </div><!--/ .col-masonry-->
                 <div class="col-md-4 col-sm-6 col-masonry">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/tile-floor.jpg' %}">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/wood-floor.jpg' %}">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/tile-sink2.jpg' %}">
-                  <img class="img-masonry" src="{% static 'images/2/portfolio/tile-shower.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-floor.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/wood-floor.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-sink2.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-shower.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-floor4.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-kachina.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-mosaic-floor.jpg' %}">
                 </div><!--/ .col-masonry-->
               </div><!--/ .row-->
             </div><!--/ .tab-pane-->
             <div role="tabpanel" class="tab-pane fade" id="tile">
-              ...
+              <div class="row">
+                <div class="col-md-4 col-sm-6 col-masonry">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-floor-exterior.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-mosaic-wall.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-shower2.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-sink.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-floor3.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-mosaic-floor.jpg' %}">
+                </div><!--/ .col-masonry-->
+                <div class="col-md-4 col-sm-6 col-masonry">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-kitchen-sink.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-fireplace.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-mosaic-wall2.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-floor2.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-shower3.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-kachina2.jpg' %}">
+                </div><!--/ .col-masonry-->
+                <div class="col-md-4 col-sm-6 col-masonry">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-floor.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-sink2.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-shower.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-floor4.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/tile-kachina.jpg' %}">
+                </div><!--/ .col-masonry-->
+              </div><!--/ .row-->
             </div><!--/ .tab-pane-->
             <div role="tabpanel" class="tab-pane fade" id="wood">
-              ...
+              <div class="row">
+                <div class="col-md-4 col-sm-6 col-masonry">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/wood-floor.jpg' %}">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/wood-floor2.jpg' %}">
+                </div><!--/ .col-masonry-->
+                <div class="col-md-4 col-sm-6 col-masonry">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/wood-stairs.jpg' %}">
+                </div><!--/ .col-masonry-->
+                <div class="col-md-4 col-sm-6 col-masonry">
+                  <img class="img-masonry" src="{% static 'images/2/gallery/wood-stairs2.jpg' %}">
+                </div><!--/ .col-masonry-->
+              </div><!--/ .row-->
             </div><!--/ .tab-pane-->
             <div role="tabpanel" class="tab-pane fade" id="laminate">
-              ...
+              <h1>Uh oh! No photos!</h1>
             </div><!--/ .tab-pane-->
           </div><!--/ .tab-content-->
         </div><!--/ .container-fluid-->
