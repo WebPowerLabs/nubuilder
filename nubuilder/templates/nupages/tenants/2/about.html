@@ -2,6 +2,7 @@
 {% load staticfiles i18n %}
 
 {% block title %}About | Jackson Tile & Design{% endblock title %}
+{% block description %}We take pride in our tile, wood and laminate installation work and always strive provide personalized service and ideas for your next flooring project{% endblock description %}
 
 {% block content %}
   <!-- ABOUT
@@ -14,9 +15,10 @@
           </div><!--/ .col-xs-12-->
         </div><!--/ .row-->
         <div class="row">
-          <div class="col-md-6">
-            <img class="img-responsive img-team" src="http://www.parksidecabinrentals.com/files/3713/8964/4550/Happy_couple_in_the_Smoky_Mountains.jpg"/>
+          <div class="col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 headshot-wrapper">
+            <img class="img-responsive img-team" src="{% static 'images/2/bart-jennifer-jackson.jpg' %}" title="Bart and Jennifer Jackson" alt="Owners and operators of Jackson Tile & Design" />
           </div><!--/ .col-md-6-->
+          <div class="clearfix hidden-md hidden-lg"></div>
           <div class="col-md-6">
             <div class="content-box" style="margin-bottom:20px;">
               <h4 class="title">The Company</h4>

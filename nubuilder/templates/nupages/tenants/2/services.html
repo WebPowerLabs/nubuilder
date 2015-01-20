@@ -2,6 +2,7 @@
 {% load staticfiles i18n %}
 
 {% block title %}Services | Jackson Tile & Design{% endblock title %}
+{% block description %}We can provide any services related to tile, wood and laminate installation: floors, showers, countertops, walls, fireplaces and more!{% endblock description %}
 
 {% block content %}
   <!-- TILE INSTALLATION
@@ -11,9 +12,9 @@
         <div class="row">
           <div class="col-md-6">
             <div class="tile-images">
-              <img class="top-left" src="{% static 'images/2/tile-bathroom-sink.jpg' %}">
-              <img class="top-right" src="{% static 'images/2/tile-mosaic-wall.jpg' %}">
-              <img class="bottom" src="{% static 'images/2/tile-kitchen-sink.jpg' %}">
+              <img class="top-left" src="{% static 'images/2/tile-bathroom-sink.jpg' %}" title="Tile bathroom sink" alt="Tile backsplash design for bathroom sink by Jackson Tile & Design">
+              <img class="top-right" src="{% static 'images/2/tile-mosaic-wall.jpg' %}" title="Mosaic tile design" alt="Mosaic tile wall by Jackson Tile & Design">
+              <img class="bottom" src="{% static 'images/2/tile-kitchen-sink.jpg' %}" title="Tile kitchen sink" alt="Tile backsplash design for kitchen sink by Jackson Tile & Design">
               <div class="clearfix"></div>
             </div><!--/ .tile-images-->
           </div><!--/ .col-md-6-->
@@ -27,7 +28,7 @@
               <li>Mosaic</li>
               <li>Ceramic</li>
             </ul>
-            <p><a href="/pages#consult">Schedule an appointment today &#8594;</a></p>
+            <p><a href="/pages#consult" title="Request a free consultation with Jackson Tile & Design">Schedule an appointment today &#8594;</a></p>
           </div><!--/ .col-md-6-->
         </div><!--/ .row-->
       </div><!--/ .container-->
@@ -42,8 +43,8 @@
         <div class="row">
           <div class="col-md-6 col-md-push-6">
             <div class="tile-images">
-              <img src="{% static 'images/2/wood-floor-dark.jpg' %}">
-              <img class="bottom2" src="{% static 'images/2/wood-floor-light.jpg' %}">
+              <img src="{% static 'images/2/wood-floor-dark.jpg' %}" title="Dark wood flooring" alt="Wood flooring design and installation by Jackson Tile & Design">
+              <img class="bottom2" src="{% static 'images/2/laminate-floor.jpg' %}" title="Laminate flooring" alt="Laminate flooring installation by Jackson Tile & Design">
               <div class="clearfix"></div>
             </div><!--/ .tile-images-->
           </div><!--/ .col-md-6-->
@@ -57,7 +58,7 @@
               <li>Glued or Floating</li>
               <li>Engineered Hardwood</li>
             </ul>
-            <p><a href="/pages#consult">Schedule an appointment today &#8594;</a></p>
+            <p><a href="/pages#consult" title="Request a free consultation with Jackson Tile & Design">Schedule an appointment today &#8594;</a></p>
             <h4 class="title laminate">Laminate Flooring</h4>
             <hr><!--/ .separator-->
             <p>Laminate gives you unlimited access to design your floors, walls and bathrooms with affordable options, including:</p>
@@ -66,7 +67,7 @@
               <li>Stone Laminate</li>
               <li>Wood Laminate</li>
             </ul>
-            <p><a href="/pages#consult">Schedule an appointment today &#8594;</a></p>
+            <p><a href="/pages#consult" title="Request a free consultation with Jackson Tile & Design">Schedule an appointment today &#8594;</a></p>
           </div><!--/ .col-md-6-->
         </div><!--/ .row-->
       </div><!--/ .container-->
