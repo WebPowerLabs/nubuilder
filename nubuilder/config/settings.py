@@ -76,7 +76,6 @@ class Common(Configuration):
         'django.middleware.csrf.CsrfViewMiddleware',
         'django.contrib.auth.middleware.AuthenticationMiddleware',
         'django.contrib.messages.middleware.MessageMiddleware',
-        'django.middleware.clickjacking.XFrameOptionsMiddleware',
         'nupages.middleware.MultiTenantMiddleware',
     )
     ########## END MIDDLEWARE CONFIGURATION
@@ -406,3 +405,4 @@ class Production(Common):
     ########## END CACHING
 
     ########## Your production stuff: Below this line define 3rd party libary settings
+
