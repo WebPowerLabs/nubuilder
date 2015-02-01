@@ -1,0 +1,217 @@
+{% extends "nupages/tenants/3/base.html" %}
+{% load staticfiles i18n %}
+
+{% block content %}
+  <!-- IMAGE SLIDER
+  ================================================== -->
+  <div id="home-slider" class="carousel slide home-slider" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#home-slider" data-slide-to="0" class="active"></li>
+      <li data-target="#home-slider" data-slide-to="1"></li>
+      <li data-target="#home-slider" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img class="img-slider hidden-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/mosaic-cafe-restaurant.jpg">
+        <div class="carousel-caption hidden-xs">
+          <div class="container">
+            <div class="col-md-8 pull-right right-40">
+              <div class="border-box">
+                <h1 class="title">
+                  Welcome to</br>Teresa's Mosaic Cafe
+                  <span class="frame-bullet top-left">.</span>
+                  <span class="frame-bullet top-right">.</span>
+                  <span class="frame-bullet bottom-left">.</span>
+                  <span class="frame-bullet bottom-right">.</span>
+                </h1><!--/ .title-->
+              </div><!--/ .border-box-->
+            </div><!--/ .col-md-8-->
+          </div><!--/ .container-->
+        </div><!--/ .carousel-caption.hidden-xs-->
+        <img class="img-slider visible-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/mosaic-cafe-restaurant-xs.jpg">
+        <div class="carousel-caption visible-xs">
+          Welcome to</br>Teresa's Mosaic Cafe
+        </div><!--/ .carousel-caption.visible-xs-->
+      </div><!--/ .item-->
+      <div class="item">
+        <img class="img-slider hidden-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/huevos-rancheros.jpg">
+        <div class="carousel-caption top hidden-xs">
+          <div class="container">
+            <div class="col-md-8 pull-right text-right">
+              <h1 class="title"><span class="subtitle">Try our world famous</span></br>Huevos Rancheros</h1>
+              <span class="hidden-sm"><a class="btn btn-lg btn-default" href="#">See the Full Menu</a></span>
+              <span class="visible-sm"><a class="btn btn-default" href="#">See the Full Menu</a></span>
+            </div><!--/ .col-md-8-->
+          </div><!--/ .container-->
+        </div><!--/ .carousel-caption.hidden-xs-->
+        <img class="img-slider visible-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/huevos-rancheros-xs.jpg">
+        <div class="carousel-caption visible-xs">
+          Huevos Rancheros
+        </div><!--/ .carousel-caption.visible-xs-->
+      </div><!--/ .item-->
+      <div class="item">
+        <img class="img-slider hidden-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/chicken-fajitas.jpg">
+        <div class="carousel-caption hidden-xs">
+          <div class="container">
+            <div class="col-md-8 text-left">
+              <h1 class="title"><span class="subtitle">Or our tender, juicy</span></br>Chicken Fajitas</h1>
+              <span class="hidden-sm"><a class="btn btn-lg btn-primary" href="#">See the Full Menu</a></span>
+              <span class="visible-sm"><a class="btn btn-primary" href="#">See the Full Menu</a></span>
+            </div><!--/ .col-md-8-->
+          </div><!--/ .container-->
+        </div><!--/ .carousel-caption.hidden-xs-->
+        <img class="img-slider visible-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/chicken-fajitas-xs.jpg">
+        <div class="carousel-caption visible-xs">
+          Chicken Fajitas
+        </div><!--/ .carousel-caption.visible-xs-->
+      </div><!--/ .item-->
+      <div class="item">
+        <img class="img-slider hidden-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/teresa-alfonso-matias.jpg">
+        <img class="img-slider visible-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/teresa-alfonso-matias-xs.jpg">
+      </div><!--/ .item-->
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#home-slider" role="button" data-slide="prev">
+      <span class="fa fa-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#home-slider" role="button" data-slide="next">
+      <span class="fa fa-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!--/ IMAGE SLIDER
+  ================================================== -->
+
+  <!-- FEATURED CONTENT
+  ================================================== -->
+  <section class="featured">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading col-xs-12">
+          <h1 class="title">Featured on Food Network</h1>
+        </div><!--/ .section-heading-->
+      </div><!--/ .row-->
+      <div class="row">
+        <div class="col-md-7">
+          <div class="video-wrapper">
+            <iframe src="//www.youtube.com/embed/MIXKlcYnNOU?controls=2&showinfo=0&rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            <img class="frame-top-left" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/frame-corner1.png">
+            <img class="frame-top-right" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/frame-corner2.png">
+            <img class="frame-bottom-left" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/frame-corner3.png">
+            <img class="frame-bottom-right" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/frame-corner4.png">
+          </div><!--/ .video-wrapper-->
+        </div><!--/ .col-md-6-->
+        <div class="col-md-5">
+          <h2 class="font-base">Throwdown! with Bobby Flay: Huevos Rancheros</h2>
+          <p>Nullam tristique orci nec quam ornare euismod. Cras rhoncus, ligula nec aliquet pulvinar, massa ligula dignissim velit, vel ullamcorper lacus mi at odio. Integer non erat est. Duis ultricies convallis est, non ultricies urna pretium vitae. Vivamus ullamcorper rutrum eros, a lobortis ipsum consectetur ac. Mauris ultricies est purus, quis congue justo sollicitudin id. Morbi eu facilisis massa.</p>
+          <p>Praesent tincidunt fermentum malesuada. Nullam pulvinar ac augue ac luctus. Donec sed tempor libero. Duis eget sagittis nisl. Aliquam convallis dolor et ipsum tincidunt, eget accumsan mi ultricies. Praesent sapien ex, iaculis ut efficitur eget, condimentum in sapien. Aenean quis porttitor nibh.</p>
+          <a class="btn btn-lg btn-primary" href="#">See More Videos<i class="fa fa-arrow-right"></i></a>
+        </div><!--/ .col-md-6-->
+      </div><!--/ .row-->
+    </div><!--/ .container-->
+  </section>
+  <!--/ FEATURED CONTENT
+  ================================================== -->
+
+  <!-- FEATURED GALLERY
+  ================================================== -->
+  <section class="photo-gallery">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading col-xs-12">
+          <h1 class="title">Photos</h1>
+        </div><!--/ .section-heading-->
+      </div><!--/ .row-->
+      <!------ PREVIEW GALLERY ------>
+      <div class="row gallery-wrapper hidden-xs">
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar.jpg" data-lightbox="home" data-title="Title" class="col-md-4 col-sm-6 gallery-item">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar-thumb.jpg"/>
+          <div class="item-info">
+            <p class="description">Item description goes right here, foo.</p>
+          </div><!--/ .item-info-->
+          <paper-ripple fit></paper-ripple>
+        </a><!--/ .gallery-item-->
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-fajitas.jpg" data-lightbox="home" data-title="Chicken Fajitas" class="col-md-4 col-sm-6 gallery-item">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-fajitas-thumb.jpg"/>
+          <div class="item-info">
+            <h4 class="title">Chicken Fajitas</h4>
+            <p class="description">Item description goes right here, foo.</p>
+          </div><!--/ .item-info-->
+          <paper-ripple fit></paper-ripple>
+        </a><!--/ .gallery-item-->
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess.jpg" data-lightbox="home" data-title="Title" class="col-md-4 col-sm-6 gallery-item">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess-thumb.jpg"/>
+          <div class="item-info">
+            <p class="description">Item description goes right here, foo.</p>
+          </div><!--/ .item-info-->
+          <paper-ripple fit></paper-ripple>
+        </a><!--/ .gallery-item-->
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mexican-hot-chocolate.jpg" data-lightbox="home" data-title="Chocolate Oaxaqueño (Mexican Hot Chocolate)" class="col-md-4 col-sm-6 gallery-item">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mexican-hot-chocolate-thumb.jpg"/>
+          <div class="item-info">
+            <h4 class="title">Chocolate Oaxaqueño</h4>
+            <p class="description">Item description goes right here, foo.</p>
+          </div><!--/ .item-info-->
+          <paper-ripple fit></paper-ripple>
+        </a><!--/ .gallery-item-->
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking.jpg" data-lightbox="home" data-title="Title" class="col-md-4 col-sm-6 gallery-item">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking-thumb.jpg"/>
+          <div class="item-info">
+            <p class="description">Item description goes right here, foo.</p>
+          </div><!--/ .item-info-->
+          <paper-ripple fit></paper-ripple>
+        </a><!--/ .gallery-item-->
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/caldo-de-camaron.jpg" data-lightbox="home" data-title="Caldo de Camaron (Shrimp Soup)" class="col-md-4 col-sm-6 gallery-item">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/caldo-de-camaron-thumb.jpg"/>
+          <div class="item-info">
+            <h4 class="title">Caldo de Camaron</h4>
+            <p class="description">Item description goes right here, foo.</p>
+          </div><!--/ .item-info-->
+          <paper-ripple fit></paper-ripple>
+        </a><!--/ .gallery-item-->
+      </div><!--/ .row-->
+      <!------ PREVIEW GALLERY X-SMALL ------>
+      <div class="row gallery-xs visible-xs">
+        <div class="col-xs-12">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar-thumb.jpg"/>
+          <div class="item-info">
+            <p class="description small">Item description goes right here, foo.</p>
+          </div><!--/ .item-info-->
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-fajitas-thumb.jpg"/>
+          <div class="item-info">
+            <h5 class="title">Chicken Fajitas</h5>
+            <p class="description small">Item description goes right here, foo.</p>
+          </div><!--/ .item-info-->
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess-thumb.jpg"/>
+          <div class="item-info">
+            <p class="description small">Item description goes right here, foo.</p>
+          </div><!--/ .item-info-->
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mexican-hot-chocolate-thumb.jpg"/>
+          <div class="item-info">
+            <h5 class="title">Chocolate Oaxaqueño</h5>
+            <p class="description small">Item description goes right here, foo.</p>
+          </div><!--/ .item-info-->
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking-thumb.jpg"/>
+          <div class="item-info">
+            <p class="description small">Item description goes right here, foo.</p>
+          </div><!--/ .item-info-->
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/caldo-de-camaron-thumb.jpg"/>
+          <div class="item-info">
+            <h5 class="title">Caldo de Camaron</h5>
+            <p class="description small">Item description goes right here, foo.</p>
+          </div><!--/ .item-info-->
+        </div><!--/ .col-xs-12-->
+      </div><!--/ .row-->
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+          <a class="btn btn-lg btn-block btn-primary">See All Photos</a>
+        </div>
+      </div><!--/ .row-->
+    </div><!--/ .container-->
+  </section>
+  <!--/ FEATURED GALLERY
+  ================================================== -->
+{% endblock content %}

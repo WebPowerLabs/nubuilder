@@ -1,0 +1,1090 @@
+{% extends "nupages/tenants/3/base.html" %}
+{% load staticfiles i18n %}
+
+{% block title %}Menu | Teresa's Mosaic Cafe{% endblock title %}
+{% block description %}Page description goes here!{% endblock description %}
+
+{% block content %}
+  <!-- RESTAURANT MENU
+  ================================================== -->
+  <section class="menu">
+    <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/media/printable-restaurant-menu.pdf" download class="print-menu hidden-xs">Download the Printable Menu</a>
+    <div class="container">
+      <div class="row hidden-xs">
+        <div class="section-heading col-xs-12">
+          <h1 class="title">Restaurant Menu</h1>
+        </div><!--/ .section-heading-->
+      </div><!--/ .row-->
+      <div role="tabpanel">
+        <!------ MENU NAVIGATION BUTTONS ------>
+        <div class="row">
+          <ul class="nav-tab-content hidden-xs" role="tablist">
+            <li role="presentation" class="col-sm-4"><a href="#breakfast" class="btn-lg btn-block btn-menus" aria-controls="breakfast" role="tab" data-toggle="tab">
+              <i class="flaticon-breakfast"></i> Breakfast
+              <paper-ripple fit></paper-ripple>
+            </a></li><!--/ .col-sm-4-->
+            <li role="presentation" class="col-sm-4 active"><a href="#lunch-dinner" class="btn-lg btn-block btn-menus" aria-controls="lunch-dinner" role="tab" data-toggle="tab">
+              <i class="flaticon-dinner"></i> Lunch & Dinner
+              <paper-ripple fit></paper-ripple>
+            </a></li><!--/ .col-sm-4-->
+            <li role="presentation" class="col-sm-4"><a href="#drinks" class="btn-lg btn-block btn-menus" aria-controls="drinks" role="tab" data-toggle="tab">
+              <i class="flaticon-drinks"></i> Drinks
+              <paper-ripple fit></paper-ripple>
+            </a></li><!--/ .col-sm-4-->
+          </ul><!--/ .nav-->
+        </div><!--/ .row-->
+        <!------ MENU MOBILE NAVBAR ------>
+        <nav class="navbar navbar-default navbar-fixed-bottom navbar-tab-content visible-xs" role="navigation">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li role="presentation"><a href="#breakfast" aria-controls="breakfast" role="tab" data-toggle="tab">
+                <i class="flaticon-breakfast"></i>
+                <paper-ripple fit></paper-ripple>
+              </a></li>
+              <li role="presentation" class="active"><a href="#lunch-dinner" aria-controls="lunch-dinner" role="tab" data-toggle="tab">
+                <i class="flaticon-dinner"></i>
+                <paper-ripple fit></paper-ripple>
+              </a></li>
+              <li role="presentation"><a href="#drinks" aria-controls="drinks" role="tab" data-toggle="tab">
+                <i class="flaticon-drinks"></i>
+                <paper-ripple fit></paper-ripple>
+              </a></li>
+            </ul><!-- /.nav -->
+          </div><!-- /.container-fluid -->
+        </nav><!-- /.navbar-menus -->
+        <div class="tab-content">
+
+          <!-- BREAKFAST MENU
+          ================================================== -->
+          <div role="tabpanel" class="tab-pane fade" id="breakfast">
+            <!------ Mexican Breakfast ------>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="section-heading visible-xs">
+                  <h1 class="title">Breakfast</h1>
+                </div><!--/ .section-heading-->
+                <h4 class="disclaimer"><em>*Breakfast ends at 11am Monday-Friday and 12pm on Saturdays & Sundays</em></h4>
+                <h3 class="cat-title">Desayunos Mexicanos <span class="bullet">.</span> Mexican Breakfast</h3>
+                <p class="cat-desc">All dishes served with beans and handmade corn or flour tortillas.</p>
+              </div><!--/ .col-xs-12-->
+              <div class="col-md-4">
+                <h4 class="item-title"><span class="number">1.</span>Teresa’s House-made Chorizo con Huevo</h4>
+                  <span class="price">8.50</span>
+                  <p class="item-desc">Two eggs scrambled with house-made chorizo (Mexican sausage).</p>
+                <h4 class="item-title"><span class="number">2.</span>Huevos Rancheros</h4>
+                  <span class="price">8.75</span>
+                  <p class="item-desc">As seen on Food Network! Beans on a fried corn tortilla topped with two fried eggs, covered with melted cheese and Teresa’s homemade ranchero salsa. <strong>Add Chorizo for $2.00.</strong></p>
+                <h4 class="item-title"><span class="number">3.</span>Huevos á la Mexicana</h4>
+                  <span class="price">8.50</span>
+                  <p class="item-desc">Two eggs scrambled with diced tomato, onion and fresh green chile.</p>
+              </div><!--/ .col-md-4-->
+              <div class="col-md-4">
+                <h4 class="item-title"><span class="number">4.</span>Enchiladas con Huevos</h4>
+                  <span class="price">9.00</span>
+                  <p class="item-desc">Two cheese-filled enchiladas with two eggs, any style.</p>
+                <h4 class="item-title"><span class="number">5.</span>Huevos con Jamón</h4>
+                  <span class="price">8.00</span>
+                  <p class="item-desc">Two scrambled eggs with diced ham.</p>
+                <h4 class="item-title"><span class="number">6.</span>Machaca de Tres Chiles con Huevo</h4>
+                  <span class="price">8.50</span>
+                  <p class="item-desc">Shredded beef sautéed with fresh roasted green chiles, bell peppers, poblano chiles, tomatoes and onions scrambled with two eggs.</p>
+              </div><!--/ .col-md-4-->
+              <div class="col-md-4">
+                <h4 class="item-title"><span class="number">7.</span>Huevos con Tamal y Enchilada</h4>
+                  <span class="price">9.00</span>
+                  <p class="item-desc">Two eggs any style with <strong>one</strong> green corn tamale and <strong>one</strong> cheese enchilada.</p>
+              </div><!--/ .col-md-4-->
+            </div><!--/ .row-->
+            <div class="row">
+              <!------ Oaxacan Style Breakfast ------>
+              <div class="col-md-6 col-half-left">
+                <h3 class="cat-title">Desayunos de Oaxaca <span class="bullet">.</span> Oaxacan Style Breakfast</h3>
+                <p class="cat-desc">All dishes served with handmade corn or flour tortillas.</p>
+                <h4 class="item-title"><span class="number">1.</span>Huevos con Chilaquiles</h4>
+                  <span class="price">9.00</span>
+                  <p class="item-desc">Two eggs any style with fried tortillas topped with a homemade red salsa and cheese. Served with homemade black beans.</p>
+                <h4 class="item-title"><span class="number">2.</span>Huevos en Salsa Frita</h4>
+                  <span class="price">9.00</span>
+                  <p class="item-desc">Two eggs scrambled and topped with a special sauce made from fresh tomatoes and jalapeño peppers. Served with homemade black beans.</p>
+                <h4 class="item-title"><span class="number">3.</span>Huevos Divorciados (Divorced Eggs)</h4>
+                  <span class="price">9.00</span>
+                  <p class="item-desc">Two fried eggs served separately, one with a tomato chile sauce and one with a green tomatillo chile sauce. Served with homemade black beans.</p>
+                <h4 class="item-title"><span class="number">4.</span>Mole Enchiladas de Huevo</h4>
+                  <span class="price">9.50</span>
+                  <p class="item-desc">Three enchiladas filled with scrambled eggs, topped with traditional, Oaxacan Mole and sesame seeds. Served with beans and queso fresco.</p>
+              </div><!--/ .col-md-6-->
+              <!------ Burros Mosaic ------>
+              <div class="col-md-6">
+                <h3 class="cat-title no-bullet">Burros Mosaic</h3>
+                <p class="cat-desc">All burros are rolled using a fresh, handmade flour tortilla. Make it enchilada style and add your choice of red or green sauce topped with cheese for $2.50.</p>            
+                <h4 class="item-title"><span class="number">1.</span>Teresa’s House-made Chorizo con Huevo</h4>
+                  <span class="price">7.50</span>
+                  <p class="item-desc">Scrambled eggs with homemade Mexican sausage.</p>
+                <h4 class="item-title"><span class="number">2.</span>Machaca de Tres Chiles con Huevo</h4>
+                  <span class="price">7.50</span>
+                  <p class="item-desc">Scrambled eggs with shredded beef.</p>
+                <h4 class="item-title"><span class="number">3.</span>Papas con Huevo</h4>
+                  <span class="price">7.00</span>
+                  <p class="item-desc">Scrambled eggs with potatoes rolled in a flour tortilla.</p>
+                <h4 class="item-title"><span class="number">4.</span>Papas con Chorizo</h4>
+                  <span class="price">7.50</span>
+                  <p class="item-desc">Potatoes and Mexican sausage rolled in a flour tortilla.</p>
+                <h4 class="item-title"><span class="number">5.</span>Huevos con Frijoles y Queso</h4>
+                  <span class="price">7.00</span>
+                  <p class="item-desc">Scrambled eggs with beans and cheese.</p>
+              </div><!--/ .col-md-6-->
+            </div><!--/ .row-->
+            <div class="row">
+              <!------ Omelettes ------>            
+              <div class="col-md-6 col-half-left">
+                <h3 class="cat-title no-desc no-bullet">Omelettes</h3>
+                <h4 class="item-title"><span class="number">1.</span>Chorizo (Mexican sausage) Omelette</h4>
+                  <span class="price">8.50</span>
+                  <p class="item-desc">Served with beans, home potatoes and your choice of handmade corn or flour tortillas.</p>
+                <h4 class="item-title"><span class="number">2.</span>Cheese Omelette</h4>
+                  <span class="price">7.75</span>
+                  <p class="item-desc">Served with home potatoes and toast.</p>
+                <h4 class="item-title"><span class="number">3.</span>Deluxe Omelette</h4>
+                  <span class="price">8.50</span>
+                  <p class="item-desc">Bell pepper, tomato, onion, ham, cheddar cheese and mushrooms. Served with home potatoes and toast.</p>
+                <h4 class="item-title"><span class="number">4.</span>Ham & Cheese Omelette</h4>
+                  <span class="price">8.00</span>
+                  <p class="item-desc">Served with home potatoes and toast.</p>
+                <h4 class="item-title"><span class="number">5.</span>Omelette a la Mexicana</h4>
+                  <span class="price">8.50</span>
+                  <p class="item-desc">Tomatoes, onions, fresh green chile and cheese. Served with beans and your choice of handmade corn or flour tortillas.</p>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+              <!------ American Breakfast ------>
+              <div class="col-md-6">
+                <h3 class="cat-title no-desc">Desayunos Americanos <span class="bullet">.</span> American Breakfast</h3>
+                <h4 class="item-title"><span class="number">1.</span>Three pancakes served with butter and syrup</h4>
+                  <span class="price">7.00</span>
+                <h4 class="item-title"><span class="number">2.</span>Two pancakes served with butter and syrup, two eggs and home potatoes</h4>
+                  <span class="price">8.50</span>
+                <h4 class="item-title"><span class="number">3.</span>Three slices of French toast served with butter and syrup</h4>
+                  <span class="price">7.00</span>
+                <h4 class="item-title"><span class="number">4.</span>Two slices of French toast served with butter and syrup, two eggs and home potatoes</h4>
+                  <span class="price">8.50</span>
+                <h4 class="item-title"><span class="number">5.</span>Two eggs served with bacon, home potatoes and toast</h4>
+                  <span class="price">8.50</span>
+                <h4 class="item-title"><span class="number">6.</span>Two eggs served with ham, home potatoes and toast</h4>
+                  <span class="price">8.50</span>
+                <h4 class="item-title"><span class="number">7.</span>Two eggs, link sausage, home potatoes and toast</h4>
+                  <span class="price">8.50</span>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+            </div><!--/ .row-->
+            <!------ Menudo ------>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <div class="featured-cat">
+                  <h3 class="cat-title no-bullet">Menudo</h3>
+                  <p class="cat-desc">Traditional soup made with hominy and garnished with cilantro, green onions, oregano and lemon. Your choice of Red or White Menudo.</p>
+                  <h4 class="item-title">Large Bowl with Pan Birote (Mexican Toast)</h4>
+                    <span class="price">8.50</span>
+                  <h4 class="item-title">Small Bowl</h4>
+                    <span class="price">5.50</span>
+                  <h4 class="item-title">Pan Birote</h4>
+                    <span class="price">1.50</span>
+                  <div class="clearfix"></div>
+                </div><!--/ .featured-cat-->
+              </div><!--/ .col-md-6-->
+            </div><!--/ .row-->
+            <div class="row">
+              <!------ Side Orders ------>
+              <div class="col-md-6 col-half-left no-numbers">
+                <h3 class="cat-title no-desc">Al Lado <span class="bullet">.</span> Side Orders</h3>
+                <h4 class="item-title">Chorizo</h4>
+                  <span class="price">3.50</span>
+                  <p class="item-desc">Mexican sausage.</p>
+                <h4 class="item-title">Chilaquiles</h4>
+                  <span class="price">4.50</span>
+                  <p class="item-desc">Fried tortillas topped with a homemade red salsa and cheese.</p>
+                <h4 class="item-title">Ham Steak, Bacon (3) or Sausage (3)</h4>
+                  <span class="price">2.75</span>
+                <h4 class="item-title">Eggs (2)</h4>
+                  <span class="price">2.50</span>
+                <h4 class="item-title">Home Potatoes</h4>
+                  <span class="price">2.50</span>
+                <h4 class="item-title">Refried Beans</h4>
+                  <span class="price">2.50</span>
+                <h4 class="item-title">Black Beans</h4>
+                  <span class="price">2.50</span>
+                <h4 class="item-title">Chips</h4>
+                  <span class="price">1.50</span>
+                <h4 class="item-title">Handmade Tortillas</h4>
+                  <span class="price">1.50</span>
+                  <p class="item-desc">Your choice of corn or flour.</p>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+              <!------ Sunday Specials ------>           
+              <div class="col-md-6 no-numbers">
+                <h3 class="cat-title no-desc no-bullet">Sunday Specials</h3>
+                <h4 class="item-title">Desayuno con Salsa de Nopalito</h4>
+                  <span class="price">10.00</span>
+                  <p class="item-desc">Two eggs any style, nopales salsa, chilaquiles and homemade Mexican chorizo. Served with black beans and handmade corn or flour tortillas.</p>
+                <h4 class="item-title">Chocolate Oaxaqueño</h4>
+                  <span class="price">3.50</span>
+                  <p class="item-desc">Oaxacan hot chocolate.</p>
+                <h4 class="item-title">Pan Dulce Mexicano</h4>
+                  <span class="price">1.50</span>
+                <h4 class="item-title">Fresh Squeezed Orange Juice</h4>
+                  <span class="price">4.00</span>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+            </div><!--/ .row-->
+            <div class="row">
+              <!------ Breakfast/Brunch Cocktails ------>
+              <div class="col-md-6 col-half-left no-numbers">
+                <h3 class="cat-title no-desc no-bullet">Breakfast/Brunch Cocktails</h3>
+                <h4 class="item-title">Mimosa</h4>
+                  <span class="price">6.50</span>
+                  <p class="item-desc">Champagne and orange juice.</p>
+                <h4 class="item-title">Bellini</h4>
+                  <span class="price">7.00</span>
+                  <p class="item-desc">Champagne and peach purée.</p>
+                <h4 class="item-title">Bloody Mary</h4>
+                  <span class="price">7.00</span>
+                  <p class="item-desc">Vodka with seasonings, Clamato and fresh citrus juice.</p>
+                <h4 class="item-title">Michelada</h4>
+                  <span class="price">6.00</span>
+                  <p class="item-desc">Served in a frosty glass with a salted rim. On the rocks with seasonings, Tabasco, Clamato (optional) and your choice of bottled beer.</p>
+                <h4 class="item-title">Greyhound / Salty Dog</h4>
+                  <span class="price">6.50</span>
+                  <p class="item-desc">Vodka and grapefruit juice on the rocks with or without a salted rim.</p>
+                <h4 class="item-title">Screwdriver</h4>
+                  <span class="price">6.50</span>
+                  <p class="item-desc">Vodka and orange juice on the rocks.</p>
+                <h4 class="item-title">Mexican Coffee</h4>
+                  <span class="price">6.75</span>
+                  <p class="item-desc">Kahlua and coffee topped with whipped cream.</p>
+                <h4 class="item-title">Irish Coffee</h4>
+                  <span class="price">6.75</span>
+                  <p class="item-desc">Irish whiskey and coffee topped with whipped cream.</p>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+              <!------ Beverages ------>           
+              <div class="col-md-6 no-numbers">
+                <h3 class="cat-title no-desc">Bebidas <span class="bullet">.</span> Beverages</h3>
+                <h4 class="item-title">Coffee</h4>
+                  <span class="price">2.50</span>
+                  <p class="item-desc">Regular or decaf.</p>
+                <h4 class="item-title sizes">Milk</h4>
+                  <span class="price-sizes">
+                    SM <span class="size-sm">1.75</span>
+                    LG <span class="size-lg">2.75</span>
+                  </span>
+                  <p class="item-desc">Regular or chocolate milk.</p>
+                <h4 class="item-title sizes">Juice</h4>
+                  <span class="price-sizes">
+                    SM <span class="size-sm">1.75</span>
+                    LG <span class="size-lg">2.75</span>
+                  </span>
+                  <p class="item-desc">Apple, orange, grapefruit, pineapple or Clamato.</p>
+                <h4 class="item-title">Soda</h4>
+                  <span class="price">2.25</span>
+                  <p class="item-desc">Coca-Cola, Diet Coke, Orange Fanta, Sprite or Dr. Pepper.</p>
+                <h4 class="item-title">Iced Tea</h4>
+                  <span class="price">2.25</span>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+            </div><!--/ .row-->
+          </div><!--/ .tabpanel-->
+          <!--/ BREAKFAST MENU
+          ================================================== -->
+
+          <!-- LUNCH/DINNER MENU
+          ================================================== -->
+          <div role="tabpanel" class="tab-pane fade in active" id="lunch-dinner">
+            <div class="row">
+              <div class="col-md-6 col-half-left no-numbers">
+                <div class="section-heading visible-xs">
+                  <h1 class="title">Lunch/Dinner</h1>
+                </div><!--/ .section-heading-->
+                <!------ Appetizers ------>
+                <h3 class="cat-title no-desc">Para Comenzar <span class="bullet">.</span> Appetizers</h3>
+                <h4 class="item-title sizes">Guacamole</h4>
+                  <span class="price-sizes">
+                    SM <span class="size-sm">5.00</span>
+                    LG <span class="size-lg">7.50</span>
+                  </span>
+                <h4 class="item-title no-price">Sonoran Cheese Crisps</h4>
+                  <p class="item-desc">Large, fresh flour tortilla oven-crisped with melted cheese and covered with your choice of toppings. <strong>Add homemade chorizo to any crisp for $2.00.</strong></p>
+                  <div class="sub-items">
+                    <h4 class="item-title">Plain Cheese</h4>
+                      <span class="price">8.50</span>
+                    <h4 class="item-title">Green Chile</h4>
+                      <span class="price">9.00</span>
+                    <h4 class="item-title">Deluxe Cheese</h4>
+                      <span class="price">10.00</span>
+                      <p class="item-desc">Tomato, avocado, olives and green chile strips.</p>
+                    <h4 class="item-title">Mojo de Ajo Crisp</h4>
+                      <span class="price">14.00</span>
+                      <p class="item-desc">Diced garlic shrimp with roasted green chiles.</p>
+                    <h4 class="item-title">Machaca de Tres Chiles Crisp</h4>
+                      <span class="price">10.00</span>
+                      <p class="item-desc">Shredded Angus Beef sautéed in fresh roasted green chiles, bell pepper and poblano chiles.</p>
+                  </div><!--/ .sub-items-->
+                <h4 class="item-title dozens">Mini Chimichangas</h4>
+                  <span class="price-sizes">
+                    &#189; DZ <span class="size-sm">7.00</span>
+                    DZ <span class="size-lg">11.00</span>
+                  </span>
+                  <p class="item-desc">Served with fresh guacamole and sour cream.</p>
+                <h4 class="item-title sizes">Quesadilla</h4>
+                  <span class="price-sizes">
+                    MD <span class="size-sm">6.50</span>
+                    LG <span class="size-lg">8.00</span>
+                  </span>
+                  <p class="item-desc">Served with fresh guacamole, sour cream and pico de gallo.</p>
+                <h4 class="item-title">Shrimp Ceviche</h4>
+                  <span class="price">10.00</span>
+                  <p class="item-desc">Fresh black tiger shrimp in Teresa's fresh Mexican cocktail sauce.</p>
+                <div class="clearfix"></div>
+                <!------ Tostadas ------>
+                <h3 class="cat-title no-bullet">Tostadas</h3>
+                <p class="cat-desc"><strong>Two</strong> fried corn tortillas smothered in beans and topped with lettuce, tomatoes, cheese, and your choice of topping. Served with rice.</p>
+                <h4 class="item-title">Beans</h4>
+                  <span class="price">8.00</span>
+                <h4 class="item-title">Guacamole</h4>
+                  <span class="price">9.00</span>
+                <h4 class="item-title">Machaca</h4>
+                  <span class="price">9.00</span>
+                  <p class="item-desc">Shredded Angus Beef.</p>
+                <h4 class="item-title">Ground Beef</h4>
+                  <span class="price">9.00</span>
+                <h4 class="item-title">Chicken</h4>
+                  <span class="price">9.00</span>
+                <h4 class="item-title">Pork Carnitas</h4>
+                  <span class="price">9.00</span>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+              <!------ Salads ------>          
+              <div class="col-md-6 no-numbers">
+                <h3 class="cat-title">Topopos <span class="bullet">.</span> Salads</h3>
+                <p class="cat-desc">A fried corn tortilla smothered with beans under a mound of greens topped with avocado, tomato, egg, cheese, black olives and green chile.</p>
+                <h4 class="item-title">Machaca Topopo</h4>
+                  <span class="price">10.00</span>
+                  <p class="item-desc">Shredded Angus Beef.</p>
+                <h4 class="item-title">Mojo de Ajo Topopo</h4>
+                  <span class="price">14.00</span>
+                  <p class="item-desc">Garlic shrimp.</p>
+                <h4 class="item-title">Chicken Topopo</h4>
+                  <span class="price">10.00</span>
+                <h4 class="item-title">Veggie Topopo</h4>
+                  <span class="price">8.50</span>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+              <!------ Soups ------>          
+              <div class="col-md-6 no-numbers">
+                <h3 class="cat-title">Sopas <span class="bullet">.</span> Soups</h3>
+                <p class="cat-desc">Large bowls come with your choice of handmade corn or flour tortillas. Add tortillas to any cup for $1.50.</p>
+                <h4 class="item-title dozens">Albóndigas</h4>
+                  <span class="price-sizes">
+                    CUP <span class="size-sm">5.50</span>
+                    BOWL <span class="size-lg">8.50</span>
+                  </span>
+                  <p class="item-desc">Ground chuck meatball soup.</p>
+                <h4 class="item-title dozens">Cazuela</h4>
+                  <span class="price-sizes">
+                    CUP <span class="size-sm">5.50</span>
+                    BOWL <span class="size-lg">8.50</span>
+                  </span>
+                  <p class="item-desc">Shredded Angus Beef, roasted green chiles and potatoes.</p>
+                <h4 class="item-title dozens">Menudo con Pan Birote</h4>
+                  <span class="price-sizes">
+                    CUP <span class="size-sm">5.50</span>
+                    BOWL <span class="size-lg">8.50</span>
+                  </span>
+                  <p class="item-desc">Traditional hominy and tripe soup served with Mexican bread, garnished with cilantro and green onions. Choice of Red or White Menudo.</p>
+                <h4 class="item-title dozens">Caldo de Queso</h4>
+                  <span class="price-sizes">
+                    CUP <span class="size-sm">5.50</span>
+                    BOWL <span class="size-lg">8.50</span>
+                  </span>
+                  <p class="item-desc">Cheese soup.</p>
+                <h4 class="item-title dozens">Chicken Tortilla Soup</h4>
+                  <span class="price-sizes">
+                    CUP <span class="size-sm">6.00</span>
+                    BOWL <span class="size-lg">9.00</span>
+                  </span>
+                  <p class="item-desc">David’s specialty! Served with avocados and white cheese.</p>
+                <div class="clearfix"></div>
+                <!------ Flautas ------>
+                <h3 class="cat-title no-bullet">Flautas</h3>
+                <p class="cat-desc"><strong>Five</strong> fried, rolled corn tortillas with your choice of filling. Served with rice, beans, guacamole and sour cream.</p>
+                <h4 class="item-title">Machaca</h4>
+                  <span class="price">10.00</span>
+                  <p class="item-desc">Shredded Angus Beef.</p>
+                <h4 class="item-title">Chicken</h4>
+                  <span class="price">10.00</span>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+            </div><!--/ .row-->
+            <!------ Mexican Plates ------>
+            <div class="row">
+              <div class="col-xs-12">
+                <h3 class="cat-title no-desc">Platos Mexicanos <span class="bullet">.</span> Mexican Plates</h3>
+              </div><!--/ .col-xs-12-->
+              <div class="col-md-4">
+                <h4 class="item-title"><span class="number">1.</span>Chile Relleno</h4>
+                  <span class="price">9.50</span>
+                  <p class="item-desc">Fresh-roasted green chile stuffed with cheese, dipped in egg batter and fried, topped with salsa and cheese. Served with rice, beans and handmade tortillas.</p>
+                <h4 class="item-title"><span class="number">2.</span>Carne con Chile Colorado o Verde</h4>
+                  <span class="price">11.00</span>
+                  <p class="item-desc">Angus Beef chunks simmered in your choice of Teresa’s special red chili or green tomatillo sauce. Served with rice, beans and handmade tortillas.</strong></p>
+                <h4 class="item-title"><span class="number">3.</span>Machaca de Tres Chiles Plate</h4>
+                  <span class="price">11.00</span>
+                  <p class="item-desc">Shredded Angus Beef sautéed with green chilis, bell peppers, poblano chiles, tomatoes and onions. Served with rice, beans and handmade tortillas.</p>
+                <h4 class="item-title"><span class="number">4.</span>Dos Enchiladas de Queso</h4>
+                  <span class="price">9.00</span>
+                  <p class="item-desc"><strong>Two</strong> rolled corn tortillas filled with cheese, baked in red sauce and topped with cheese. Served with rice and beans.</p>
+                <h4 class="item-title"><span class="number">5.</span>Dos Enchiladas de Carne Molida</h4>
+                  <span class="price">10.00</span>
+                  <p class="item-desc"><strong>Two</strong> rolled corn tortillas filled with ground beef and baked in red sauce. Served with rice and beans.</p>
+                <h4 class="item-title"><span class="number">6.</span>Dos Enchiladas de Machaca</h4>
+                  <span class="price">10.00</span>
+                  <p class="item-desc"><strong>Two</strong> rolled corn tortillas filled with shredded Angus Beef steak, baked in red sauce and topped with cheese. Served with rice and beans.</p>
+              </div><!--/ .col-md-4-->
+              <div class="col-md-4">
+                <h4 class="item-title"><span class="number">7.</span>Dos Enchiladas de Carne con Chile Verde</h4>
+                  <span class="price">10.00</span>
+                  <p class="item-desc"><strong>Two</strong> rolled corn tortillas filled with chunks of Angus Beef steak simmered in green tomatillo sauce and topped with green sauce and jack cheese. Served with rice and beans.</p>
+                <h4 class="item-title"><span class="number">8.</span>Dos Enchiladas de Carne con Chile Colorado</h4>
+                  <span class="price">10.00</span>
+                  <p class="item-desc"><strong>Two</strong> rolled corn tortillas filled with chunks of Angus Beef steak simmered in Teresa’s special red chile. Served with rice and beans.</p>
+                <h4 class="item-title"><span class="number">9.</span>Dos Enchiladas de Pollo</h4>
+                  <span class="price">10.00</span>
+                  <p class="item-desc"><strong>Two</strong> rolled corn tortillas filled with shredded chicken, baked in red or green sauce and topped with cheese. Served with rice and beans.</p>
+                <h4 class="item-title"><span class="number">10.</span>Flat Enchiladas</h4>
+                  <span class="price">10.50</span>
+                  <p class="item-desc"><strong>Two</strong> masa patties smothered in enchilada sauce and topped with your choice of cheese or ground beef and cheese. Served with rice and beans.</p>
+                <h4 class="item-title"><span class="number">11.</span>Bistec Picado á la Mexicana</h4>
+                  <span class="price">12.50</span>
+                  <p class="item-desc">Chunks of Angus Beef top sirloin grilled with green chiles, tomatoes and onions with seasonings. Served with calabacitas (sautéed squash, onions, tomatoes, corn and cheese), beans and handmade tortillas.</p>
+                <h4 class="item-title"><span class="number">12.</span>Lomo Adobado</h4>
+                  <span class="price">12.50</span>
+                  <p class="item-desc">Oaxacan-style marinated pork loin grilled and served with calabacitas (sautéed squash, onions, tomatoes, corn and cheese), black beans and handmade tortillas.</p>
+              </div><!--/ .col-md-4-->
+              <div class="col-md-4">
+                <h4 class="item-title"><span class="number">13.</span>Tacos</h4>
+                  <span class="price">9.00</span>
+                  <p class="item-desc"><strong>Two</strong> tacos filled with your choice of chicken, ground beef, or machaca. Served with rice and beans.</p>
+                <h4 class="item-title"><span class="number">14.</span>Taco & Cheese Enchilada</h4>
+                  <span class="price">9.00</span>
+                  <p class="item-desc"><strong>One</strong> taco filled with your choice of chicken, ground beef, or machaca and <strong>one</strong> cheese enchilada. Served with rice and beans.</p>
+                <h4 class="item-title"><span class="number">15.</span>Tacos, Cheese Enchilada & Bean Tostada</h4>
+                  <span class="price">11.50</span>
+                  <p class="item-desc"><strong>Two</strong> tacos with your choice of chicken, ground beef, or machaca, <strong>one</strong> cheese enchilada and <strong>one</strong> bean tostada. Served with rice.</p>
+                <h4 class="item-title"><span class="number">16.</span>Chile Relleno Combinación</h4>
+                  <span class="price">12.00</span>
+                  <p class="item-desc"><strong>One</strong> chile relleno and <strong>two</strong> cheese enchiladas. Served with beans and handmade tortillas.</p>
+                <h4 class="item-title"><span class="number">17.</span>A la Tampiqueña</h4>
+                  <span class="price">14.00</span>
+                  <p class="item-desc">Grilled Angus Beef flank steak and <strong>one</strong> cheese enchilada. Served with rice, beans and handmade tortillas.</p>
+                <h4 class="item-title no-price"><span class="number">18.</span>Tamale Combinación</h4>
+                  <p class="item-desc"><strong>One</strong> or <strong>two</strong> beef tamales, <strong>one</strong> cheese enchilada and <strong>one</strong> taco with your choice of chicken, ground beef, or machaca. Served with rice and beans.</p>
+                  <div class="sub-items">
+                    <h4 class="item-title">One Tamale</h4>
+                      <span class="price">11.00</span>
+                    <h4 class="item-title">Two Tamales</h4>
+                      <span class="price">12.00</span>
+                  </div><!--/ .sub-items-->
+              </div><!--/ .col-md-4-->
+            </div><!--/ .row-->
+            <!------ Dinner Specials ------>
+            <div class="row">
+              <div class="col-xs-12">
+                <h3 class="cat-title no-bullet no-desc">Dinner Specials</h3>
+              </div><!--/ .col-xs-12-->
+              <div class="col-md-4 no-numbers">
+                <h4 class="item-title">Alfonso’s Plate</h4>
+                  <span class="price">15.00</span>
+                  <p class="item-desc">Grilled, marinated pork loin, grilled Angus Beef flank steak, <strong>one</strong> chile relleno, and <strong>one</strong> cheese enchilada. Served with guacamole, black beans and handmade flour tortillas.</p>
+                <h4 class="item-title">Pollo en Mole Estilo Oaxaca</h4>
+                  <span class="price">14.00</span>
+                  <p class="item-desc">Chicken breast prepared in a special Oaxacan-style brown sauce topped with sesame seeds. Served with rice and handmade flour tortillas.</strong></p>
+                <h4 class="item-title">Dos Enchiladas de Pollo en Mole</h4>
+                  <span class="price">12.50</span>
+                  <p class="item-desc">Rolled corn tortillas filled with shredded chicken and covered in a special Oaxacan-style brown sauce topped with sesame seeds. Served with rice and beans.</p>
+              </div><!--/ .col-md-4-->
+              <div class="col-md-4 no-numbers">
+                <h4 class="item-title">Oaxacan-style Chicken Chile Relleno</h4>
+                  <span class="price">14.00</span>
+                  <p class="item-desc">Fresh-roasted poblano chile generously stuffed with pollo picadillo (shredded chicken stewed with tomatoes, onions and chiles), dipped in egg batter and fried, then topped with Teresa’s special sauce and cheese. Served with rice, black beans and handmade tortillas.</p>
+                <h4 class="item-title">Chicken Fajitas</h4>
+                  <span class="price">12.50</span>
+                  <p class="item-desc">Marinated chicken breast sautéed with bell peppers and red onions. Served with calabacitas (sautéed squash, onions, tomatoes, corn and cheese), beans, sour cream, guacamole and handmade tortillas.</p>
+                <h4 class="item-title">Dos Tamales de Elote o Carne</h4>
+                  <span class="price">9.75</span>
+                  <p class="item-desc"><strong>Two</strong> cornhusks filled with steamed white cornmeal and your choice of green chiles and cheese or shredded red chile beef with a green olive and jalapeño slice. Served with rice and beans.</p>
+              </div><!--/ .col-md-4-->
+              <div class="col-md-4 no-numbers">
+                <h4 class="item-title">Carnitas</h4>
+                  <span class="price">14.00</span>
+                  <p class="item-desc">Two eggs any style with <strong>one</strong> green corn tamale and <strong>one</strong> cheese enchilada.</p>
+                <h4 class="item-title">Huevos Rancheros</h4>
+                  <span class="price">9.00</span>
+                  <p class="item-desc">Succulent pieces of braised pork shoulder cooked until crisp on the outside while tender on the inside, topped with a tomatillo-jalapeño sauce. Served with rice, beans, guacamole, pico de gallo and your choice of handmade corn or flour tortillas.</p>
+              </div><!--/ .col-md-4-->
+            </div><!--/ .row-->
+            <div class="row">
+              <!------ Seafood Plates ------>
+              <div class="col-md-6 col-half-left no-numbers">
+                <h3 class="cat-title no-desc">Platos de Mariscos <span class="bullet">.</span> Seafood Plates</h3>
+                <h4 class="item-title">Camarón Ranchero</h4>
+                  <span class="price">16.00</span>
+                  <p class="item-desc">Sautéed shrimp with green chile, tomatoes and onions. Served with rice, calabacitas (sautéed squash, onions, tomatoes, corn and cheese) and your choice of handmade corn or flour tortillas.</p>
+                <h4 class="item-title">Camarón al Mojo de Ajo</h4>
+                  <span class="price">16.00</span>
+                  <p class="item-desc">Grilled shrimp marinated in garlic. Served with rice, calabacitas (sautéed squash, onions, tomatoes, corn and cheese) and your choice of handmade corn or flour tortillas.</p>
+                <h4 class="item-title">Teresa’s Homemade Breaded Shrimp</h4>
+                  <span class="price">16.00</span>
+                  <p class="item-desc">Served with rice, calabacitas (sautéed squash, onions, tomatoes, corn and cheese) and your choice of handmade corn or flour tortillas.</p>
+                <h4 class="item-title">Fish Tacos</h4>
+                  <span class="price">10.00</span>
+                  <p class="item-desc"><strong>Three</strong> soft tacos filled with garlic-marinated cod, cabbage and guacamole. Served with calabacitas (sautéed squash, onions, tomatoes, corn and cheese).</p>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+              <!------ Seafood Soups ------>           
+              <div class="col-md-6 no-numbers">
+                <h3 class="cat-title">Caldos de Mar <span class="bullet">.</span> Seafood Soups</h3>
+                <p class="cat-desc">All soups are served with handmade flour tortillas. Spice up your soup with chipotle sauce for only $0.75.</p>
+                <h4 class="item-title">Caldo de Camarón</h4>
+                  <span class="price">15.00</span>
+                  <p class="item-desc">Shrimp soup.</p>
+                <h4 class="item-title">Caldo de Pescado</h4>
+                  <span class="price">15.00</span>
+                  <p class="item-desc">Fish soup.</p>
+                <h4 class="item-title">Caldo de Pescado y Camarón</h4>
+                  <span class="price">16.00</span>
+                  <p class="item-desc">Shrimp and fish soup.</p>
+                <h4 class="item-title">Siete Mares</h4>
+                  <span class="price">16.00</span>
+                  <p class="item-desc">Seven Seas soup.</p>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+            </div><!--/ .row-->
+            <!------ Burros ------>
+            <div class="row">
+              <div class="col-xs-12">
+                <h3 class="cat-title no-bullet">Burros</h3>
+                <p class="cat-desc">A large handmade flour tortilla stuffed with your choice of fillings and heated (not fried). Make it enchilada style and add your choice of red or green sauce topped with cheese for $2.50.</p>
+              </div><!--/ .col-xs-12-->
+              <div class="col-md-4">
+                <h4 class="item-title"><span class="number">1.</span>Bean Burro con Queso</h4>
+                  <span class="price">5.50</span>
+                  <p class="item-desc">Beans and cheese.</p>
+                <h4 class="item-title"><span class="number">2.</span>Sonoran Bean Burro</h4>
+                  <span class="price">6.50</span>
+                  <p class="item-desc">Beans, cheese, tomato and green chiles.</p>
+                <h4 class="item-title"><span class="number">3.</span>Veggie Burro</h4>
+                  <span class="price">7.00</span>
+                  <p class="item-desc">A house specialty! Avocado, tomato, green chiles, sprouts and melted cheese (no meat or beans).</p>
+                <h4 class="item-title"><span class="number">4.</span>Chicken & Sour Cream Burro</h4>
+                  <span class="price">7.50</span>
+                  <p class="item-desc">Shredded chicken sautéed with tomatoes and green chiles with sprouts.</p>
+              </div><!--/ .col-md-4-->
+              <div class="col-md-4">
+                <h4 class="item-title"><span class="number">5.</span>Carne Asada Burro</h4>
+                  <span class="price">7.50</span>
+                  <p class="item-desc">Chunks of grilled Angus Beef chuck steak and beans.</p>
+                <h4 class="item-title"><span class="number">6.</span>Super Deluxe Burro</h4>
+                  <span class="price">7.50</span>
+                  <p class="item-desc">Beans, melted cheese, avocado, tomato and green chile.</p>
+                <h4 class="item-title"><span class="number">7.</span>Carne con Chile Colorado o Chile Verde</h4>
+                  <span class="price">7.50</span>
+                  <p class="item-desc">Angus Beef chunks simmered in red or green sauce.</p>
+                <h4 class="item-title"><span class="number">8.</span>Machaca de Tres Chiles</h4>
+                  <span class="price">7.50</span>
+                  <p class="item-desc">Shredded Angus Beef sautéed with green chiles, bell peppers, poblano chiles, tomatoes and onions.</p>
+              </div><!--/ .col-md-4-->
+              <div class="col-md-4">
+                <h4 class="item-title"><span class="number">9.</span>Chorizo con Huevo Burro</h4>
+                  <span class="price">7.50</span>
+                  <p class="item-desc">Mexican sausage with eggs.</p>
+                <h4 class="item-title"><span class="number">10.</span>Carne Molida Burro</h4>
+                  <span class="price">7.50</span>
+                  <p class="item-desc">Ground beef, beans and cheese.</p>
+                <h4 class="item-title"><span class="number">11.</span>Bistec Picado Burro</h4>
+                  <span class="price">9.00</span>
+                  <p class="item-desc">Angus Beef chunks of top sirloin grilled with green chile, tomatoes, onions and special seasonings. Served with your choice of rice or beans on the side.</p>
+                <h4 class="item-title"><span class="number">12.</span>Carnitas Burro</h4>
+                  <span class="price">9.00</span>
+                  <p class="item-desc">Shredded pork. Served with your choice of rice or beans on the side.</p>
+              </div><!--/ .col-md-4-->
+            </div><!--/ .row-->
+            <div class="row">
+              <!------ Chimichangas ------>
+              <div class="col-md-6 col-half-left">
+                <h3 class="cat-title no-bullet">Chimichangas</h3>
+                <p class="cat-desc">A deep-fried, rolled flour tortilla with your choice of fillings, topped with sour cream and guacamole. Make it enchilada style and add your choice of red or green sauce topped with cheese for $2.50.</p>
+                <h4 class="item-title"><span class="number">1.</span>Carne con Chile Colorado</h4>
+                  <span class="price">8.00</span>
+                  <p class="item-desc">Angus Beef chunks simmered in red chile sauce.</p>
+                <h4 class="item-title"><span class="number">2.</span>Machaca de Tres Chiles</h4>
+                  <span class="price">8.00</span>
+                  <p class="item-desc">Shredded Angus Beef sautéed with green chiles, bell peppers, poblano chiles, tomatoes and onions.</p>
+                <h4 class="item-title"><span class="number">3.</span>Pollo</h4>
+                  <span class="price">8.00</span>
+                  <p class="item-desc">Chicken.</p>
+                <h4 class="item-title"><span class="number">4.</span>Carne Molida</h4>
+                  <span class="price">8.00</span>
+                  <p class="item-desc">Ground beef and cheese.</p>
+                <h4 class="item-title"><span class="number">5.</span>Veggie</h4>
+                  <span class="price">7.50</span>
+                  <p class="item-desc">Beans, cheese and green chile.</p>
+                <h4 class="item-title"><span class="number">6.</span>Carne con Chile Verde</h4>
+                  <span class="price">8.00</span>
+                  <p class="item-desc">Angus Beef chunks simmered in a green tomatillo sauce.</p>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+              <!------ Tacos ------>           
+              <div class="col-md-6 no-numbers">
+                <h3 class="cat-title no-bullet">Tacos</h3>
+                <p class="cat-desc"><strong>Three</strong> soft or crisp tacos with lettuce, cheese and tomatoes on your choice of corn or flour tortillas. Served with beans.</p>
+                <h4 class="item-title">Machaca</h4>
+                  <span class="price">8.00</span>
+                  <p class="item-desc">Shredded Angus Beef sautéed with green chiles, bell peppers, poblano chiles, tomatoes and onions.</p>
+                <h4 class="item-title">Chicken</h4>
+                  <span class="price">8.00</span>
+                <h4 class="item-title">Ground Beef Patty</h4>
+                  <span class="price">8.00</span>
+                <h4 class="item-title">Carne Asada</h4>
+                  <span class="price">8.00</span>
+                  <p class="item-desc">Angus Beef flank steak with cabbage and pico de gallo. <strong>(Soft Only)</strong></p>
+                <h4 class="item-title">Steak Fajitas  </h4>
+                  <span class="price">9.50</span>
+                  <p class="item-desc">Angus Beef steak with cabbage, pico de gallo and guacamole. <strong>(Soft Only)</strong></p>
+                <h4 class="item-title">Lomo Adobado</h4>
+                  <span class="price">9.50</span>
+                  <p class="item-desc">Marinated pork with cabbage, pico de gallo and guacamole. <strong>(Soft Only)</strong></p>
+                <h4 class="item-title">Carnitas</h4>
+                  <span class="price">9.50</span>
+                  <p class="item-desc">Shredded pork with cabbage, pico de gallo and guacamole. <strong>(Soft Only)</strong></p>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+            </div><!--/ .row-->
+            <div class="row">
+              <!------ Side Orders ------>
+              <div class="col-md-6 col-half-left no-numbers">
+                <h3 class="cat-title">Acompañamientos <span class="bullet">.</span> Side Orders</h3>
+                <h4 class="item-title">French Fries</h4>
+                  <span class="price">2.75</span>
+                <h4 class="item-title">Refried Beans</h4>
+                  <span class="price">2.50</span>
+                <h4 class="item-title">Black Beans</h4>
+                  <span class="price">2.50</span>
+                <h4 class="item-title">Spanish Rice</h4>
+                  <span class="price">2.50</span>
+                <h4 class="item-title">Sour Cream</h4>
+                  <span class="price">2.00</span>
+                <h4 class="item-title">Tortillas (1 order)</h4>
+                  <span class="price">1.50</span>
+                <h4 class="item-title">Calabacitas</h4>
+                  <span class="price">4.00</span>
+                  <p class="item-desc">Sautéed squash, onions, tomatoes, corn and cheese.</p>
+                <h4 class="item-title">Taco</h4>
+                  <span class="price">2.75</span>
+                <h4 class="item-title">Enchilada de Queso</h4>
+                  <span class="price">2.50</span>
+                <h4 class="item-title">Chile Relleno</h4>
+                  <span class="price">4.50</span>
+                  <p class="item-desc">Fresh-roasted green chile stuffed with cheese, dipped in egg batter and fried, topped with salsa and cheese.</p>
+                <h4 class="item-title">Extra cheese</h4>
+                  <span class="price">1.00</span>
+                <h4 class="item-title">Hamburger w/ French Fries</h4>
+                  <span class="price">6.00</span>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+              <!------ Desserts ------>           
+              <div class="col-md-6 no-numbers">
+                <h3 class="cat-title no-desc">Postres <span class="bullet">.</span> Desserts</h3>
+                <h4 class="item-title">Arroz con Leche</h4>
+                  <span class="price">4.50</span>
+                  <p class="item-desc">Rice pudding.</p>
+                <h4 class="item-title sizes">Flan</h4>
+                  <span class="price">4.50</span>
+                  <p class="item-desc">Mexican custard pudding.</p>
+                <h4 class="item-title sizes">Nieve Frita</h4>
+                  <span class="price">4.50</span>
+                  <p class="item-desc">Fried ice cream.</p>
+                <h4 class="item-title">Sopapilla</h4>
+                  <span class="price">5.00</span>
+                  <p class="item-desc">Fried, puffed flour tortilla topped with honey, cinnamon and sugar.</p>
+                <h4 class="item-title">Chocolate Cake</h4>
+                  <span class="price">4.50</span>
+                <h4 class="item-title">Churros</h4>
+                  <span class="price">3.00</span>
+                  <p class="item-desc">Covered in cinnamon and sugar.</p>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+            </div><!--/ .row-->
+          </div><!--/ .tabpanel-->
+          <!--/ LUNCH/DINNER MENU
+          ================================================== -->
+
+          <!-- DRINK MENU
+          ================================================== -->
+          <div role="tabpanel" class="tab-pane fade" id="drinks">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="section-heading visible-xs">
+                  <h1 class="title">Drinks</h1>
+                </div><!--/ .section-heading-->
+                <!------ Tequilas ------>
+                <h3 class="cat-title no-bullet no-desc">Tequilas de Teresa</h3>
+              </div><!--/ .col-xs-12-->
+              <div class="col-md-4 no-numbers">
+                <h4 class="item-title">Patrón Añejo</h4>
+                  <span class="price">9.00</span>
+                <h4 class="item-title">Patrón Reposado</h4>
+                  <span class="price">8.50</span>
+                <h4 class="item-title">Patrón Silver</h4>
+                  <span class="price">8.00</span>
+                <div class="divider"></div>
+                <h4 class="item-title">Cabo Wabo Añejo</h4>
+                  <span class="price">9.00</span>
+                <h4 class="item-title">Cabo Wabo Reposado</h4>
+                  <span class="price">8.50</span>
+                <h4 class="item-title">Cabo Wabo Blanco</h4>
+                  <span class="price">8.00</span>
+                <div class="divider"></div>
+                <h4 class="item-title">Paradiso Don Felipe</h4>
+                  <span class="price">14.00</span>
+                <div class="divider"></div>
+                <h4 class="item-title">El Tesoro Añejo</h4>
+                  <span class="price">9.00</span>
+                <h4 class="item-title">El Tesoro Reposado</h4>
+                  <span class="price">8.50</span>
+                <h4 class="item-title">El Tesoro Platinum</h4>
+                  <span class="price">8.00</span>
+                <div class="divider"></div>
+                <h4 class="item-title">Don Julio 1942</h4>
+                  <span class="price">15.00</span>
+                <h4 class="item-title">Don Julio Añejo</h4>
+                  <span class="price">8.50</span>
+                <h4 class="item-title">Don Julio Reposado</h4>
+                  <span class="price">8.00</span>
+                <h4 class="item-title">Don Julio Blanco</h4>
+                  <span class="price">7.75</span>
+              </div><!--/ .col-md-4-->
+              <div class="col-md-4 no-numbers">
+                <h4 class="item-title">Tres Generaciones Añejo</h4>
+                  <span class="price">9.00</span>
+                <h4 class="item-title">Tres Generaciones Reposado</h4>
+                  <span class="price">8.50</span>
+                <h4 class="item-title">Tres Generaciones Plata</h4>
+                  <span class="price">8.00</span>
+                <div class="divider"></div>
+                <h4 class="item-title">Sauza Hornitos Reposado</h4>
+                  <span class="price">6.75</span>
+                <h4 class="item-title">Sauza Hornitos Plata</h4>
+                  <span class="price">6.75</span>
+                <div class="divider"></div>
+                <h4 class="item-title">Herradura Añejo</h4>
+                  <span class="price">8.25</span>
+                <h4 class="item-title">Herradura Reposado</h4>
+                  <span class="price">7.75</span>
+                <h4 class="item-title">Herradura Silver</h4>
+                  <span class="price">7.50</span>
+                <div class="divider"></div>
+                <h4 class="item-title">Don Eduardo Añejo</h4>
+                  <span class="price">8.75</span>
+                <h4 class="item-title">Don Eduardo Silver</h4>
+                  <span class="price">8.00</span>
+                <div class="divider"></div>
+                <h4 class="item-title">Jose Cuervo Reserva Añejo</h4>
+                  <span class="price">15.00</span>
+                <h4 class="item-title">Jose Cuervo Reserva Platino</h4>
+                  <span class="price">10.00</span>
+                <h4 class="item-title">Jose Cuervo Tradicional</h4>
+                  <span class="price">6.75</span>
+                <h4 class="item-title">Jose Cuervo Especial</h4>
+                  <span class="price">6.50</span>
+              </div><!--/ .col-md-4-->
+              <div class="col-md-4 no-numbers">
+                <h4 class="item-title">1800 Reposado</h4>
+                  <span class="price">7.00</span>
+                <h4 class="item-title">1800 Silver</h4>
+                  <span class="price">6.75</span>
+                <div class="divider"></div>
+                <h4 class="item-title">Tequila Rose</h4>
+                  <span class="price">7.25</span>
+                <div class="divider"></div>
+                <h4 class="item-title">Cazadores Añejo</h4>
+                  <span class="price">7.75</span>
+                <h4 class="item-title">Cazadores Reposado</h4>
+                  <span class="price">7.25</span>
+                <h4 class="item-title">Cazadores Plata</h4>
+                  <span class="price">6.75</span>
+                <div class="divider"></div>
+                <h4 class="item-title">Milagro Añejo</h4>
+                  <span class="price">7.75</span>
+                <h4 class="item-title">Milagro Reposado</h4>
+                  <span class="price">7.26</span>
+                <h4 class="item-title">Milagro Plata</h4>
+                  <span class="price">6.75</span>
+                <div class="divider"></div>
+                <h4 class="item-title">Corazón Añejo</h4>
+                  <span class="price">8.25</span>
+                <h4 class="item-title">Corazón Reposado</h4>
+                  <span class="price">7.75</span>
+                <h4 class="item-title">Corazón Blanco</h4>
+                  <span class="price">7.50</span>
+                <div class="divider"></div>
+                <h4 class="item-title">Cruz Reposado</h4>
+                  <span class="price">9.00</span>
+                <h4 class="item-title">Cruz Silver</h4>
+                  <span class="price">8.50</span>
+              </div><!--/ .col-md-4-->
+            </div><!--/ .row-->
+            <div class="row">
+              <div class="col-md-6 col-half-left no-numbers">
+                <!------ Specialty Drinks ------>
+                <h3 class="cat-title no-desc no-bullet">Specialty Drinks</h3>
+                <h4 class="item-title pitchers">Teresa’s Mosaic Cafe Margarita</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">4.50</span>
+                    PTCH <span class="size-lg">9.00</span>
+                  </span>
+                  <p class="item-desc">Made with white tequila. Frozen or on the rocks, you’ll love it.</p>
+                <h4 class="item-title pitchers">Cadillac Margarita</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">4.50</span>
+                    PTCH <span class="size-lg">9.00</span>
+                  </span>
+                  <p class="item-desc">A blend of 1800 Reposado, Grand Marnier and house sweet & sour.</p>
+                <h4 class="item-title pitchers">Jefe de los Jefes</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">4.50</span>
+                    PTCH <span class="size-lg">9.00</span>
+                  </span>
+                  <p class="item-desc">Patrón Añejo mixed with Cointreau and house sweet & sour.</p>
+                <h4 class="item-title pitchers">Platinum Margarita</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">4.50</span>
+                    PTCH <span class="size-lg">9.00</span>
+                  </span>
+                  <p class="item-desc">Herradura Silver, Cointreau and house sweet & sour.</p>
+                <h4 class="item-title sizes">La Flaga Margarita</h4>
+                  <span class="price-sizes">
+                    G <span class="size-lg">4.50</span>
+                  </span>
+                  <p class="item-desc">A delicious low-calorie alternative. Made with Don Julio Blanco, fresh lime juice, agave nectar and soda water.</p>
+                <h4 class="item-title sizes">Prickly Pear Margarita</h4>
+                  <span class="price-sizes">
+                    G <span class="size-lg">4.50</span>
+                  </span>
+                  <p class="item-desc">Prickly pear syrup, Tres Generaciones Plata, triple-sec and house sweet & sour.</p>
+                <h4 class="item-title sizes">Tequila Cosmopolitan</h4>
+                  <span class="price-sizes">
+                    G <span class="size-lg">4.50</span>
+                  </span>
+                  <p class="item-desc">A classic, reinvented. Made with Hornitos Plata, Cointreau, cranberry juice and fresh lime juice.</p>
+                <h4 class="item-title sizes">Fresh Mint Mojito</h4>
+                  <span class="price-sizes">
+                    G <span class="size-lg">4.50</span>
+                  </span>
+                  <p class="item-desc">Bacardi Rum, garden-fresh mint leaves, fresh lime juice, sugar and soda water.</p>
+                <h4 class="item-title sizes">Midori Melon Margarita</h4>
+                  <span class="price-sizes">
+                    G <span class="size-lg">4.50</span>
+                  </span>
+                <h4 class="item-title sizes">Blue Margarita</h4>
+                  <span class="price-sizes">
+                    G <span class="size-lg">4.50</span>
+                  </span>
+                <h4 class="item-title sizes">Apple Margarita</h4>
+                  <span class="price-sizes">
+                    G <span class="size-lg">4.50</span>
+                  </span>
+                <div class="clearfix"></div>
+                <!------ Beer ------>
+                <h3 class="cat-title no-desc no-bullet">Beer</h3>
+                <h4 class="item-title">Michelada (not just a beer)</h4>
+                  <span class="price">6.00</span>
+                  <p class="item-desc">On the rocks with seasonings, Tabasco, Clamato (optional) and your choice of bottled beer. Served in a frosty glass with a salted rim.</p>
+                <h4 class="item-title pitchers draft">DRAFT</h4>
+                  <span class="price-sizes">
+                    PT <span class="size-sm">4.50</span>
+                    SM PTCH <span class="size-sm">9.00</span>
+                    LG PTCH <span class="size-lg">15.00</span>
+                  </span>
+                  <div class="sub-items small-items">
+                    <h4 class="item-title no-price">Dos Equis Amber</h4>
+                    <h4 class="item-title no-price">Negra Modelo</h4>
+                    <h4 class="item-title no-price">Bud Light</h4>
+                    <h4 class="item-title no-price">Tecate</h4>
+                    <h4 class="item-title no-price">Beer of the Month</h4>
+                  </div><!--/ .sub-items-->
+                <h4 class="item-title sizes">BOTTLED - IMPORTS</h4>
+                  <span class="price">4.00</span>
+                  <div class="sub-items small-items">
+                    <h4 class="item-title no-price">Dos Equis Amber</h4>
+                    <h4 class="item-title no-price">Dos Equis Lager</h4>
+                    <h4 class="item-title no-price">Bohemia</h4>
+                    <h4 class="item-title no-price">Corona Extra</h4>
+                    <h4 class="item-title no-price">Corona Light</h4>
+                    <h4 class="item-title no-price">Negra Modelo</h4>
+                    <h4 class="item-title no-price">Modelo Especial</h4>
+                    <h4 class="item-title no-price">Pacifico</h4>
+                    <h4 class="item-title no-price">Tecate</h4>
+                    <h4 class="item-title no-price">Tecate Light</h4>
+                    <h4 class="item-title no-price">Heineken (Netherlands)</h4>
+                    <h4 class="item-title no-price">Victoria</h4>
+                  </div><!--/ .sub-items-->
+                <h4 class="item-title">BOTTLED - DOMESTIC</h4>
+                  <span class="price">3.75</span>
+                  <div class="sub-items small-items">
+                    <h4 class="item-title no-price">Michelob Ultra</h4>
+                    <h4 class="item-title no-price">Coors Light</h4>
+                    <h4 class="item-title no-price">Budweiser</h4>
+                    <h4 class="item-title no-price">Bud Light</h4>
+                    <h4 class="item-title no-price">Miller Lite</h4>
+                    <h4 class="item-title no-price">O’douls (non-alcoholic)</h4>
+                  </div><!--/ .sub-items-->
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+              <div class="col-md-6 no-numbers">
+                <!------ Frozen Specialties ------>
+                <h3 class="cat-title no-desc no-bullet">Frozen Specialties</h3>
+                <h4 class="item-title">Strawberry Splash Piña Colada</h4>
+                  <span class="price">2.50</span>
+                  <p class="item-desc">Malibu Coconut Rum and our special blend of strawberry and piña colada mix.</p>
+                <h4 class="item-title">Tequila Rose Margarita</h4>
+                  <span class="price">2.50</span>
+                  <p class="item-desc">Tequila Rose, strawberry mix, triple-sec and house sweet & sour.</p>
+                <h4 class="item-title">Strawberry Margarita</h4>
+                  <span class="price">2.50</span>
+                <h4 class="item-title">Mango Margarita</h4>
+                  <span class="price">2.50</span>
+                <h4 class="item-title">Raspberry Margarita</h4>
+                  <span class="price">2.25</span>
+                <h4 class="item-title">Peach Margarita</h4>
+                  <span class="price">2.50</span>
+                <div class="clearfix"></div>
+                <!------ Wine ------>
+                <h3 class="cat-title no-desc no-bullet">Wine</h3>
+                <h4 class="item-title sizes">CK Mondavi Chardonnay</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">6.00</span>
+                    B <span class="size-lg">20.00</span>
+                  </span>
+                <h4 class="item-title sizes">CK Mondavi Cabernet Sauvignon</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">6.00</span>
+                    B <span class="size-lg">20.00</span>
+                  </span>
+                <h4 class="item-title sizes">CK Mondavi Merlot</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">6.00</span>
+                    B <span class="size-lg">20.00</span>
+                  </span>
+                <h4 class="item-title sizes">CK Mondavi White Zinfandel</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">6.00</span>
+                    B <span class="size-lg">20.00</span>
+                  </span>
+                <h4 class="item-title sizes">Woodbridge Zinfandel</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">6.00</span>
+                    B <span class="size-lg">20.00</span>
+                  </span>
+                <h4 class="item-title sizes">Cruz Garcia Real Sangria</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">6.75</span>
+                    B <span class="size-lg">25.00</span>
+                  </span>
+                <h4 class="item-title sizes">Little Black Dress Pinot Noir</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">6.75</span>
+                    B <span class="size-lg">25.00</span>
+                  </span>
+                <h4 class="item-title sizes">Little Black Dress Pinot Grigio</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">6.75</span>
+                    B <span class="size-lg">25.00</span>
+                  </span>
+                <h4 class="item-title sizes">Terrazas Chardonnay (Argentina)</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">6.75</span>
+                    B <span class="size-lg">25.00</span>
+                  </span>
+                <h4 class="item-title sizes">Casa Lapostolle Merlot (Chile)</h4>
+                  <span class="price-sizes">
+                    G <span class="size-sm">7.00</span>
+                    B <span class="size-lg">27.00</span>
+                  </span>
+                <h4 class="item-title sizes">Catena Malbec Vista Flores (Argentina)</h4>
+                  <span class="price-sizes">
+                    B <span class="size-lg">30.00</span>
+                  </span>
+                <h4 class="item-title sizes">Campo Viejo Reserva (Spain)</h4>
+                  <span class="price-sizes">
+                    B <span class="size-lg">35.00</span>
+                  </span>
+                <div class="clearfix"></div>
+                <!------ Non-Alcoholic Beverages ------>
+                <h3 class="cat-title no-desc no-bullet">Non-Alcoholic Beverages</h3>
+                <h4 class="item-title">Soda</h4>
+                  <span class="price">2.25</span>
+                  <p class="item-desc">Coca-Cola, Diet Coke, Orange Fanta, Sprite, Dr. Pepper or Iced Tea.</p>
+                <h4 class="item-title">Virgin Margarita</h4>
+                  <span class="price">4.00</span>
+                <h4 class="item-title">Virgin Daiquiri</h4>
+                  <span class="price">4.00</span>
+                <h4 class="item-title">Virgin Colada</h4>
+                  <span class="price">4.00</span>
+                <h4 class="item-title sizes">Milk</h4>
+                  <span class="price-sizes">
+                    SM <span class="size-sm">1.75</span>
+                    LG <span class="size-lg">2.75</span>
+                  </span>
+                  <p class="item-desc">Regular or chocolate milk.</p>
+                <h4 class="item-title sizes">Juice</h4>
+                  <span class="price-sizes">
+                    SM <span class="size-sm">1.75</span>
+                    LG <span class="size-lg">2.75</span>
+                  </span>
+                  <p class="item-desc">Orange, cranberry, apple or Clamato.</p>
+                <h4 class="item-title">Tonic Water</h4>
+                  <span class="price">2.25</span>
+                <h4 class="item-title">Club Soda</h4>
+                  <span class="price">2.25</span>
+                <h4 class="item-title">Horchata (no free refills)</h4>
+                  <span class="price">1.75</span>
+                <h4 class="item-title">Homemade Lemonade (no free refills)</h4>
+                  <span class="price">1.75</span>
+                <h4 class="item-title">Hot Tea</h4>
+                  <span class="price">2.50</span>
+                <h4 class="item-title">Coffee</h4>
+                  <span class="price">2.50</span>
+                  <p class="item-desc">Regular or decaf.</p>
+                <h4 class="item-title">Arnold Palmer</h4>
+                  <span class="price">2.50</span>
+                  <p class="item-desc">Lemonade and iced tea.</p>
+                <h4 class="item-title">Shirley Temple</h4>
+                  <span class="price">2.50</span>
+                <h4 class="item-title">Cherry Coke</h4>
+                  <span class="price">2.50</span>
+                <div class="clearfix"></div>
+              </div><!--/ .col-md-6-->
+            </div><!--/ .row-->
+          </div><!--/ .tabpanel-->
+          <!--/ DRINK MENU
+          ================================================== -->
+        </div><!--/ .tab-content-->
+      </div><!--/ .tabpanel-->
+      <div class="row menu-footer">
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+          <h4 class="disclaimer"><em>*18% gratuity will be added to parties of 8 or more.</em></h4>
+          <h4 class="disclaimer text-danger"><em>Consumer Advisory: The consumption of raw or undercooked meat, fish, eggs, poultry, seafood or shellfish can increase your risk of foodborne illness. This is especially true for people with certain medical conditions.</em></h4>
+        </div><!--/ .col-lg-6-->
+      </div><!--/ .menu-footer-->
+    </div><!--/ .container-->
+  </section>
+  <!--/ RESTAURANT MENU
+  ================================================== -->
+{% endblock content %}
