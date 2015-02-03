@@ -41,8 +41,8 @@
           <div class="container">
             <div class="col-md-8 pull-right text-right">
               <h1 class="title"><span class="subtitle">Try our world famous</span></br>Huevos Rancheros</h1>
-              <span class="hidden-sm"><a class="btn btn-lg btn-default" href="#">See the Full Menu</a></span>
-              <span class="visible-sm"><a class="btn btn-default" href="#">See the Full Menu</a></span>
+              <span class="hidden-sm"><a class="btn btn-lg btn-default" href="{% url 'nupages:detail' 'menu' %}">See the Full Menu</a></span>
+              <span class="visible-sm"><a class="btn btn-default" href="{% url 'nupages:detail' 'menu' %}">See the Full Menu</a></span>
             </div><!--/ .col-md-8-->
           </div><!--/ .container-->
         </div><!--/ .carousel-caption.hidden-xs-->
@@ -57,8 +57,8 @@
           <div class="container">
             <div class="col-md-8 text-left">
               <h1 class="title"><span class="subtitle">Or our tender, juicy</span></br>Chicken Fajitas</h1>
-              <span class="hidden-sm"><a class="btn btn-lg btn-primary" href="#">See the Full Menu</a></span>
-              <span class="visible-sm"><a class="btn btn-primary" href="#">See the Full Menu</a></span>
+              <span class="hidden-sm"><a class="btn btn-lg btn-primary" href="{% url 'nupages:detail' 'menu' %}">See the Full Menu</a></span>
+              <span class="visible-sm"><a class="btn btn-primary" href="{% url 'nupages:detail' 'menu' %}">See the Full Menu</a></span>
             </div><!--/ .col-md-8-->
           </div><!--/ .container-->
         </div><!--/ .carousel-caption.hidden-xs-->
@@ -108,7 +108,7 @@
           <h2 class="font-base">Throwdown! with Bobby Flay: Huevos Rancheros</h2>
           <p>Nullam tristique orci nec quam ornare euismod. Cras rhoncus, ligula nec aliquet pulvinar, massa ligula dignissim velit, vel ullamcorper lacus mi at odio. Integer non erat est. Duis ultricies convallis est, non ultricies urna pretium vitae. Vivamus ullamcorper rutrum eros, a lobortis ipsum consectetur ac. Mauris ultricies est purus, quis congue justo sollicitudin id. Morbi eu facilisis massa.</p>
           <p>Praesent tincidunt fermentum malesuada. Nullam pulvinar ac augue ac luctus. Donec sed tempor libero. Duis eget sagittis nisl. Aliquam convallis dolor et ipsum tincidunt, eget accumsan mi ultricies. Praesent sapien ex, iaculis ut efficitur eget, condimentum in sapien. Aenean quis porttitor nibh.</p>
-          <a class="btn btn-lg btn-primary" href="#">See More Videos<i class="fa fa-arrow-right"></i></a>
+          <a class="btn btn-lg btn-primary" href="{% url 'nupages:detail' 'media' %}">See More Videos<i class="fa fa-arrow-right"></i></a>
         </div><!--/ .col-md-6-->
       </div><!--/ .row-->
     </div><!--/ .container-->
@@ -127,10 +127,10 @@
       </div><!--/ .row-->
       <!------ PREVIEW GALLERY ------>
       <div class="row gallery-wrapper hidden-xs">
-        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar.jpg" data-lightbox="home" data-title="Title" class="col-md-4 col-sm-6 gallery-item">
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar.jpg" data-lightbox="home" data-title="Enjoy happy hour at Teresa's tequila bar!" class="col-md-4 col-sm-6 gallery-item">
           <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar-thumb.jpg"/>
           <div class="item-info">
-            <p class="description">Item description goes right here, foo.</p>
+            <p class="description">Enjoy happy hour at Teresa's tequila bar!</p>
           </div><!--/ .item-info-->
           <paper-ripple fit></paper-ripple>
         </a><!--/ .gallery-item-->
@@ -138,14 +138,14 @@
           <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-fajitas-thumb.jpg"/>
           <div class="item-info">
             <h4 class="title">Chicken Fajitas</h4>
-            <p class="description">Item description goes right here, foo.</p>
+            <p class="description">Marinated chicken breast sautéed with bell peppers and red onions.</p>
           </div><!--/ .item-info-->
           <paper-ripple fit></paper-ripple>
         </a><!--/ .gallery-item-->
-        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess.jpg" data-lightbox="home" data-title="Title" class="col-md-4 col-sm-6 gallery-item">
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess.jpg" data-lightbox="home" data-title="Our hostess clears a table for the next guest." class="col-md-4 col-sm-6 gallery-item">
           <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess-thumb.jpg"/>
           <div class="item-info">
-            <p class="description">Item description goes right here, foo.</p>
+            <p class="description">Our hostess clears a table for the next guest.</p>
           </div><!--/ .item-info-->
           <paper-ripple fit></paper-ripple>
         </a><!--/ .gallery-item-->
@@ -153,14 +153,14 @@
           <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mexican-hot-chocolate-thumb.jpg"/>
           <div class="item-info">
             <h4 class="title">Chocolate Oaxaqueño</h4>
-            <p class="description">Item description goes right here, foo.</p>
+            <p class="description">Creamy Oaxacan-style hot chocolate.</p>
           </div><!--/ .item-info-->
           <paper-ripple fit></paper-ripple>
         </a><!--/ .gallery-item-->
-        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking.jpg" data-lightbox="home" data-title="Title" class="col-md-4 col-sm-6 gallery-item">
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking.jpg" data-lightbox="home" data-title="Teresa cleans poblano chiles for a fresh batch of Chicken Chile Rellenos." class="col-md-4 col-sm-6 gallery-item">
           <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking-thumb.jpg"/>
           <div class="item-info">
-            <p class="description">Item description goes right here, foo.</p>
+            <p class="description">Teresa cleans poblano chiles for a fresh batch of Chicken Chile Rellenos.</p>
           </div><!--/ .item-info-->
           <paper-ripple fit></paper-ripple>
         </a><!--/ .gallery-item-->
@@ -168,7 +168,7 @@
           <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/caldo-de-camaron-thumb.jpg"/>
           <div class="item-info">
             <h4 class="title">Caldo de Camaron</h4>
-            <p class="description">Item description goes right here, foo.</p>
+            <p class="description">Shrimp soup.</p>
           </div><!--/ .item-info-->
           <paper-ripple fit></paper-ripple>
         </a><!--/ .gallery-item-->
@@ -178,36 +178,36 @@
         <div class="col-xs-12">
           <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar-thumb.jpg"/>
           <div class="item-info">
-            <p class="description small">Item description goes right here, foo.</p>
+            <p class="description small">Enjoy happy hour at Teresa's tequila bar!</p>
           </div><!--/ .item-info-->
           <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-fajitas-thumb.jpg"/>
           <div class="item-info">
             <h5 class="title">Chicken Fajitas</h5>
-            <p class="description small">Item description goes right here, foo.</p>
+            <p class="description small">Marinated chicken breast sautéed with bell peppers and red onions.</p>
           </div><!--/ .item-info-->
           <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess-thumb.jpg"/>
           <div class="item-info">
-            <p class="description small">Item description goes right here, foo.</p>
+            <p class="description small">Our hostess clears a table for the next guest.</p>
           </div><!--/ .item-info-->
           <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mexican-hot-chocolate-thumb.jpg"/>
           <div class="item-info">
             <h5 class="title">Chocolate Oaxaqueño</h5>
-            <p class="description small">Item description goes right here, foo.</p>
+            <p class="description small">Creamy Oaxacan-style hot chocolate.</p>
           </div><!--/ .item-info-->
           <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking-thumb.jpg"/>
           <div class="item-info">
-            <p class="description small">Item description goes right here, foo.</p>
+            <p class="description small">Teresa cleans poblano chiles for a fresh batch of Chicken Chile Rellenos.</p>
           </div><!--/ .item-info-->
           <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/caldo-de-camaron-thumb.jpg"/>
           <div class="item-info">
             <h5 class="title">Caldo de Camaron</h5>
-            <p class="description small">Item description goes right here, foo.</p>
+            <p class="description small">Shrimp soup.</p>
           </div><!--/ .item-info-->
         </div><!--/ .col-xs-12-->
       </div><!--/ .row-->
       <div class="row">
         <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-          <a class="btn btn-lg btn-block btn-primary">See All Photos</a>
+          <a href="{% url 'nupages:detail' 'gallery-2' %}" class="btn btn-lg btn-block btn-primary">See All Photos</a>
         </div>
       </div><!--/ .row-->
     </div><!--/ .container-->

@@ -48,10 +48,10 @@
       </div><!--/ .navbar-header-->
       <div class="nav navbar-nav">
         <span class="hidden-sm hidden-xs">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-google-plus"></i></a>
-          <a href="#"><i class="fa fa-yelp"></i></a>
-          <a href="#"><i class="fa fa-foursquare"></i></a>
+          <a href="//www.facebook.com/pages/Teresas-Mosaic-Cafe/847102188662250"><i class="fa fa-facebook"></i></a>
+          <a href="//plus.google.com/b/101546714645196752269/101546714645196752269"><i class="fa fa-google-plus"></i></a>
+          <a href="//www.yelp.com/biz/teresas-mosaic-cafe-tucson"><i class="fa fa-yelp"></i></a>
+          <a href="//foursquare.com/v/teresas-mosaic-cafe/4b8168e9f964a5205da430e3"><i class="fa fa-foursquare"></i></a>
         </span><!--/ .hidden-sm.hidden-xs-->
         <p><a href="tel:5206244512" class="phone">520.624.4512</a></p>
       </div><!--/ .navbar-nav-->
@@ -146,10 +146,10 @@
               <a href="tel:5206244512">(520) 624-4512</a>
             </address>
             <div class="social-icons">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
-              <a href="#"><i class="fa fa-yelp"></i></a>
-              <a href="#"><i class="fa fa-foursquare"></i></a>
+              <a href="//www.facebook.com/pages/Teresas-Mosaic-Cafe/847102188662250"><i class="fa fa-facebook"></i></a>
+              <a href="//plus.google.com/b/101546714645196752269/101546714645196752269"><i class="fa fa-google-plus"></i></a>
+              <a href="//www.yelp.com/biz/teresas-mosaic-cafe-tucson"><i class="fa fa-yelp"></i></a>
+              <a href="//foursquare.com/v/teresas-mosaic-cafe/4b8168e9f964a5205da430e3"><i class="fa fa-foursquare"></i></a>
             </div><!--/ .social-icons-->
           </div><!--/ .widget-->
         </div><!--/ .row-->
@@ -159,7 +159,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <p class="copyright">2014 © Teresa's Mosaic Cafe. All rights reserved.</p>
+            <p class="copyright">2015 © Teresa's Mosaic Cafe. All rights reserved.</p>
           </div><!--/ .col-sm-6-->
           <div class="col-sm-6">
             <p class="developer">Developed by <a href="//rabbit-hole-studios.com">Rabbit Hole Studio</a>.</p>
@@ -171,3 +171,17 @@
   <!--/ FOOTER
   ================================================== -->
 {% endblock footer %}
+
+{% block javascript %}
+  <!-- Latest JQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <!-- Your stuff: Third-party javascript libraries go here -->
+  <!-- place project specific Javascript in this file -->
+  <script src="{% static 'js/project.js' %}"></script>
+
+  <!-- Parallax.js
+  ================================================== -->
+  <script src="{% static 'js/parallax.min.js' %}"></script>
+{% endblock javascript %}
