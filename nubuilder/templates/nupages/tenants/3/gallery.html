@@ -1,0 +1,472 @@
+{% extends "nupages/tenants/3/base.html" %}
+{% load staticfiles i18n %}
+
+{% block title %}Photo Gallery | Teresa's Mosaic Cafe{% endblock title %}
+{% block description %}Get your appetite ready...we've got a full gallery of our mouth-watering dishes to browse before you head in for a bite to eat!{% endblock description %}
+
+{% block ogtitle %}Photo Gallery | Teresa's Mosaic Cafe{% endblock ogtitle %}
+{% block ogimage %}https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/og-mosaic-cafe-gallery.jpg{% endblock ogimage %}
+{% block ogdesc %}Get your appetite ready...we've got a full gallery of our mouth-watering dishes to browse before you head in for a bite to eat!{% endblock ogdesc %}
+
+{% block content %}
+  <!-- PHOTO GALLERY
+  ================================================== -->
+  <section class="photo-gallery main">
+    <div class="container">
+      <div class="row hidden-xs">
+        <div class="section-heading col-xs-12">
+          <h1 class="title">Photo Gallery</h1>
+        </div><!--/ .section-heading-->
+      </div><!--/ .row-->
+      <!------ MENU NAVIGATION BUTTONS ------>
+      <div class="row">
+        <ul class="nav-tab-content hidden-xs" role="tablist">
+          <li role="presentation" class="col-sm-4 col-sm-offset-2 active"><a href="#dishes" class="btn-lg btn-block btn-menus" aria-controls="dishes" role="tab" data-toggle="tab" title="Filter photos of our Drinks & Dishes">
+            <i class="flaticon-dishes"></i> Dishes
+            <paper-ripple fit></paper-ripple>
+          </a></li><!--/ .col-sm-4-->
+          <li role="presentation" class="col-sm-4"><a href="#restaurant" class="btn-lg btn-block btn-menus" aria-controls="restaurant" role="tab" data-toggle="tab" title="Filter photos of the restaurant">
+            <i class="flaticon-restaurant"></i> Restaurant
+            <paper-ripple fit></paper-ripple>
+          </a></li><!--/ .col-sm-4-->
+        </ul><!--/ .nav-->
+      </div><!--/ .row-->
+      <!------ MENU MOBILE NAVBAR ------>
+      <nav class="navbar navbar-default navbar-fixed-bottom navbar-tab-content visible-xs" role="navigation">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li role="presentation" class="active"><a href="#dishes" aria-controls="dishes" role="tab" data-toggle="tab" title="Filter photos of our Drinks & Dishes">
+              <i class="flaticon-dishes"></i>
+              <paper-ripple fit></paper-ripple>
+            </a></li>
+            <li role="presentation"><a href="#restaurant" aria-controls="restaurant" role="tab" data-toggle="tab" title="Filter photos of the restaurant">
+              <i class="flaticon-restaurant"></i>
+              <paper-ripple fit></paper-ripple>
+            </a></li>
+          </ul><!-- /.nav -->
+        </div><!-- /.container-fluid -->
+      </nav><!-- /.navbar-menus -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="dishes">
+          <!------ DISHES GALLERY ------>
+          <div class="row hidden-xs">
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/shrimp-ceviche.jpg" data-lightbox="dishes" data-title="Shrimp Ceviche" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/shrimp-ceviche-thumb.jpg" title="Shrimp Ceviche" alt="Shrimp Ceviche: Fresh black tiger shrimp in Teresa's fresh Mexican cocktail sauce"/>
+              <div class="item-info">
+                <h4 class="title">Shrimp Ceviche</h4>
+                <p class="description">Fresh black tiger shrimp in Teresa's fresh Mexican cocktail sauce.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/cheese-crisp-deluxe.jpg" data-lightbox="dishes" data-title="Deluxe Cheese Crisp" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/cheese-crisp-deluxe-thumb.jpg" title="Deluxe Cheese Crisp" alt="Deluxe Cheese Crisp: Oven-crisped flour tortilla topped with melted cheese, tomato, avocado, olives and green chiles"/>
+              <div class="item-info">
+                <h4 class="title">Deluxe Cheese Crisp</h4>
+                <p class="description">Oven-crisped flour tortilla topped with melted cheese, tomato, avocado, olives and green chiles.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/huevos-rancheros.jpg" data-lightbox="dishes" data-title="Huevos Rancheros" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/huevos-rancheros-thumb.jpg" title="Huevos Rancheros" alt="Huevos Rancheros: Fried corn tortilla topped with beans, fried eggs, melted cheese and homemade ranchero salsa"/>
+              <div class="item-info">
+                <h4 class="title">Huevos Rancheros</h4>
+                <p class="description">Fried corn tortilla topped with beans, fried eggs, melted cheese and homemade ranchero salsa.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/caldo-de-camaron.jpg" data-lightbox="dishes" data-title="Caldo de Camaron (Shrimp Soup)" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/caldo-de-camaron-thumb.jpg" title="Caldo de Camaron" alt="Caldo de Camaron: Shrimp soup"/>
+              <div class="item-info">
+                <h4 class="title">Caldo de Camaron</h4>
+                <p class="description">Shrimp soup.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chile-relleno.jpg" data-lightbox="dishes" data-title="Chile Relleno" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chile-relleno-thumb.jpg" title="Chile Relleno" alt="Chile Relleno: Roasted green chile stuffed with cheese, fried in egg batter and topped with cheese & salsa"/>
+              <div class="item-info">
+                <h4 class="title">Chile Relleno</h4>
+                <p class="description">Roasted green chile stuffed with cheese, fried in egg batter and topped with cheese & salsa.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mole-negro.jpg" data-lightbox="dishes" data-title="Pollo en Mole Estilo Oaxaca" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mole-negro-thumb.jpg" title="Pollo en Mole Estilo Oaxaca" alt="Pollo en Mole Estilo Oaxaca: Chicken breast prepared in a Oaxacan-style Mole Negro sauce"/>
+              <div class="item-info">
+                <h4 class="title">Pollo en Mole Estilo Oaxaca</h4>
+                <p class="description">Chicken breast prepared in a Oaxacan-style Mole Negro sauce.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-chile-relleno.jpg" data-lightbox="dishes" data-title="Oaxacan-style Chicken Chile Relleno" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-chile-relleno-thumb.jpg" title="Oaxacan Chicken Chile Relleno" alt="Oaxacan Chicken Chile Relleno: Roasted poblano chile stuffed with pollo picadillo, fried in egg batter topped with cheese & Teresa’s special sauce"/>
+              <div class="item-info">
+                <h4 class="title">Oaxacan Chicken Chile Relleno</h4>
+                <p class="description">Roasted poblano chile stuffed with pollo picadillo, fried in egg batter topped with cheese & Teresa’s special sauce.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chilaquiles.jpg" data-lightbox="dishes" data-title="Chilaquiles" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chilaquiles-thumb.jpg" title="Chilaquiles" alt="Chilaquiles: Fried tortillas topped with homemade red salsa & cheese"/>
+              <div class="item-info">
+                <h4 class="title">Chilaquiles</h4>
+                <p class="description">Fried tortillas topped with homemade red salsa & cheese.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chimichanga.jpg" data-lightbox="dishes" data-title="Chimichanga" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chimichanga-thumb.jpg" title="Chimichanga" alt="Chimichanga: Deep-fried, rolled flour tortilla with your choice of fillings"/>
+              <div class="item-info">
+                <h4 class="title">Chimichanga</h4>
+                <p class="description">Deep-fried, rolled flour tortilla with your choice of fillings.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-fajitas.jpg" data-lightbox="dishes" data-title="Chicken Fajitas" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-fajitas-thumb.jpg" title="Chicken Fajitas" alt="Chicken Fajitas: Marinated chicken breast sautéed with bell peppers and red onions"/>
+              <div class="item-info">
+                <h4 class="title">Chicken Fajitas</h4>
+                <p class="description">Marinated chicken breast sautéed with bell peppers and red onions.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tamales.jpg" data-lightbox="dishes" data-title="Tamales" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tamales-thumb.jpg" title="Tamales" alt="Cornhusks filled with steamed white cornmeal and your choice of green chiles and cheese or shredded red chile beef"/>
+              <div class="item-info">
+                <h4 class="title">Tamales</h4>
+                <p class="description">Cornhusks filled with steamed white cornmeal and your choice of green chiles and cheese or shredded red chile beef.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/bloody-mary.jpg" data-lightbox="dishes" data-title="Bloody Mary" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/bloody-mary-thumb.jpg" title="Bloody Mary" alt="Bloody Mary: Vodka with seasonings, Clamato and fresh citrus juice"/>
+              <div class="item-info">
+                <h4 class="title">Bloody Mary</h4>
+                <p class="description">Vodka with seasonings, Clamato and fresh citrus juice.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/cadillac-margarita.jpg" data-lightbox="dishes" data-title="Cadillac Margarita" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/cadillac-margarita-thumb.jpg" title="Cadillac Margarita" alt="Cadillac Margarita: A blend of 1800 Reposado, Grand Marnier and house sweet & sour"/>
+              <div class="item-info">
+                <h4 class="title">Cadillac Margarita</h4>
+                <p class="description">A blend of 1800 Reposado, Grand Marnier and house sweet & sour.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mexican-hot-chocolate.jpg" data-lightbox="dishes" data-title="Chocolate Oaxaqueño (Mexican Hot Chocolate)" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mexican-hot-chocolate-thumb.jpg" title="Chocolate Oaxaqueño (Mexican Hot Chocolate)" alt="Chocolate Oaxaqueño: Creamy Oaxacan-style hot chocolate"/>
+              <div class="item-info">
+                <h4 class="title">Chocolate Oaxaqueño</h4>
+                <p class="description">Creamy Oaxacan-style hot chocolate.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+          </div><!--/ .row-->
+          <!------ DISHES GALLERY X-SMALL ------>
+          <div class="row gallery-xs visible-xs">
+            <div class="col-xs-12">
+              <div class="section-heading">
+                <h1 class="title">Dishes & Drinks</h1>
+              </div><!--/ .section-heading-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/shrimp-ceviche-thumb.jpg" title="Shrimp Ceviche" alt="Shrimp Ceviche: Fresh black tiger shrimp in Teresa's fresh Mexican cocktail sauce"/>
+              <div class="item-info">
+                <h5 class="title">Shrimp Ceviche</h5>
+                <p class="description small">Fresh black tiger shrimp in Teresa's fresh Mexican cocktail sauce.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/cheese-crisp-deluxe-thumb.jpg" title="Deluxe Cheese Crisp" alt="Deluxe Cheese Crisp: Oven-crisped flour tortilla topped with melted cheese, tomato, avocado, olives and green chiles"/>
+              <div class="item-info">
+                <h5 class="title">Deluxe Cheese Crisp</h5>
+                <p class="description small">Oven-crisped flour tortilla topped with melted cheese, tomato, avocado, olives and green chiles.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/huevos-rancheros-thumb.jpg" title="Huevos Rancheros" alt="Huevos Rancheros: Fried corn tortilla topped with beans, fried eggs, melted cheese and homemade ranchero salsa"/>
+              <div class="item-info">
+                <h5 class="title">Huevos Rancheros</h5>
+                <p class="description small">Fried corn tortilla topped with beans, fried eggs, melted cheese and homemade ranchero salsa.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/caldo-de-camaron-thumb.jpg" title="Caldo de Camaron" alt="Caldo de Camaron: Shrimp soup"/>
+              <div class="item-info">
+                <h5 class="title">Caldo de Camaron</h5>
+                <p class="description small">Shrimp soup.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chile-relleno-thumb.jpg" title="Chile Relleno" alt="Chile Relleno: Roasted green chile stuffed with cheese, fried in egg batter and topped with cheese & salsa"/>
+              <div class="item-info">
+                <h5 class="title">Chile Relleno</h5>
+                <p class="description small">Roasted green chile stuffed with cheese, fried in egg batter and topped with cheese & salsa.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mole-negro-thumb.jpg" title="Pollo en Mole Estilo Oaxaca" alt="Pollo en Mole Estilo Oaxaca: Chicken breast prepared in a Oaxacan-style Mole Negro sauce"/>
+              <div class="item-info">
+                <h5 class="title">Pollo en Mole Estilo Oaxaca</h5>
+                <p class="description small">Chicken breast prepared in a Oaxacan-style Mole Negro sauce.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-chile-relleno-thumb.jpg" title="Oaxacan Chicken Chile Relleno" alt="Oaxacan Chicken Chile Relleno: Roasted poblano chile stuffed with pollo picadillo, fried in egg batter topped with cheese & Teresa’s special sauce"/>
+              <div class="item-info">
+                <h5 class="title">Oaxacan Chicken Chile Relleno</h5>
+                <p class="description small">Roasted poblano chile stuffed with pollo picadillo, fried in egg batter topped with cheese & Teresa’s special sauce.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chilaquiles-thumb.jpg" title="Chilaquiles" alt="Chilaquiles: Fried tortillas topped with homemade red salsa & cheese"/>
+              <div class="item-info">
+                <h5 class="title">Chilaquiles</h5>
+                <p class="description small">Fried tortillas topped with homemade red salsa & cheese.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chimichanga-thumb.jpg" title="Chimichanga" alt="Chimichanga: Deep-fried, rolled flour tortilla with your choice of fillings"/>
+              <div class="item-info">
+                <h5 class="title">Chimichanga</h5>
+                <p class="description small">Deep-fried, rolled flour tortilla with your choice of fillings.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-fajitas-thumb.jpg" title="Chicken Fajitas" alt="Chicken Fajitas: Marinated chicken breast sautéed with bell peppers and red onions"/>
+              <div class="item-info">
+                <h5 class="title">Chicken Fajitas</h5>
+                <p class="description small">Marinated chicken breast sautéed with bell peppers and red onions.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tamales-thumb.jpg" title="Tamales" alt="Cornhusks filled with steamed white cornmeal and your choice of green chiles and cheese or shredded red chile beef"/>
+              <div class="item-info">
+                <h5 class="title">Tamales</h5>
+                <p class="description small">Cornhusks filled with steamed white cornmeal and your choice of green chiles and cheese or shredded red chile beef.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/bloody-mary-thumb.jpg" title="Bloody Mary" alt="Bloody Mary: Vodka with seasonings, Clamato and fresh citrus juice"/>
+              <div class="item-info">
+                <h5 class="title">Bloody Mary</h5>
+                <p class="description small">Vodka with seasonings, Clamato and fresh citrus juice.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/cadillac-margarita-thumb.jpg" title="Cadillac Margarita" alt="Cadillac Margarita: A blend of 1800 Reposado, Grand Marnier and house sweet & sour"/>
+              <div class="item-info">
+                <h5 class="title">Cadillac Margarita</h5>
+                <p class="description small">A blend of 1800 Reposado, Grand Marnier and house sweet & sour.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mexican-hot-chocolate-thumb.jpg" title="Chocolate Oaxaqueño (Mexican Hot Chocolate)" alt="Chocolate Oaxaqueño: Creamy Oaxacan-style hot chocolate"/>
+              <div class="item-info">
+                <h5 class="title">Chocolate Oaxaqueño</h5>
+                <p class="description small">Creamy Oaxacan-style hot chocolate.</p>
+              </div><!--/ .item-info-->
+            </div><!--/ .col-xs-12-->
+          </div><!--/ .row-->
+        </div><!--/ .tabpanel-->
+        <!------ RESTAURANT GALLERY ------>
+        <div role="tabpanel" class="tab-pane fade" id="restaurant">
+          <div class="row hidden-xs">
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresas-mosaic-cafe.jpg" data-lightbox="restaurant" data-title="Busy cafe on a Sunday morning!" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresas-mosaic-cafe-thumb.jpg" title="Teresa's Mosaic Cafe Restaurant" alt="Teresa's Mosaic Cafe super busy on a Sunday morning!"/>
+              <div class="item-info">
+                <p class="description">Busy cafe on a Sunday morning!</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mosaic-tabletop.jpg" data-lightbox="restaurant" data-title="Our beautiful mosaic tabletop designs, thanks to Suzanne Felber of The Home Idea Factory." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mosaic-tabletop-thumb.jpg" title="Mosaic Tabletop Designs" alt="Our beautiful Mosaic Cafe tabletop designs"/>
+              <div class="item-info">
+                <p class="description">Our beautiful mosaic tabletop designs, thanks to Suzanne Felber of The Home Idea Factory.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/david-matias-cooking-03.jpg" data-lightbox="restaurant" data-title="David Matias loving his job as Executive Chef" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/david-matias-cooking-03-thumb.jpg" title="David Matias in the Kitchen" alt="David can't help but smile when he's doing what he loves: cooking!"/>
+              <div class="item-info">
+                <p class="description">David can't help but smile when he's doing what he loves: cooking!</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-server-01.jpg" data-lightbox="restaurant" data-title="Roman gets ready to serve a hot meal for our guests." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-server-01-thumb.jpg" title="Restaurant Server at Teresa's Mosaic Cafe" alt="Roman gets ready to serve a hot meal for our guests"/>
+              <div class="item-info">
+                <p class="description">Roman gets ready to serve a hot meal for our guests.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/roasting-chiles-01.jpg" data-lightbox="restaurant" data-title="Mario fire-roasts a fresh batch of green chiles." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/roasting-chiles-01-thumb.jpg" title="Fire Roasting Green Chiles" alt="Mario fire-roasts a fresh batch of green chiles"/>
+              <div class="item-info">
+                <p class="description">Mario fire-roasts a fresh batch of green chiles.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/roasting-chiles-02.jpg" data-lightbox="restaurant" data-title="The aroma in the air is strong and spicy when we fire-roast our chiles. You don't want to miss it!" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/roasting-chiles-02-thumb.jpg" title="Fire-Roaster with Chile Verde" alt="The aroma in the air is strong and spicy when we fire-roast our chiles"/>
+              <div class="item-info">
+                <p class="description">The aroma in the air is strong and spicy when we fire-roast our chiles. You don't want to miss it!</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-server-02.jpg" data-lightbox="restaurant" data-title="On your next visit, try our homemade lemonade squeezed fresh every morning." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-server-02-thumb.jpg" title="Restaurant Server Pouring Lemonade" alt="On your next visit, try Teresa's homemade lemonade squeezed fresh every morning"/>
+              <div class="item-info">
+                <p class="description">On your next visit, try our homemade lemonade squeezed fresh every morning.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/david-matias-cooking-01.jpg" data-lightbox="restaurant" data-title="David finishes preparing one of his mother's specialties: the pollo picadillo." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/david-matias-cooking-01-thumb.jpg" title="David Matias in the Kitchen" alt="David finishes preparing one of Teresa's specialties: the pollo picadillo"/>
+              <div class="item-info">
+                <p class="description">David finishes preparing one of his mother's specialties: the pollo picadillo.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-guests-01.jpg" data-lightbox="restaurant" data-title="Our guests always enjoy the complementary chips and delicious homemade salsa." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-guests-01-thumb.jpg" title="Restaurant Guests at Teresa's Mosaic Cafe" alt="Our guests always enjoy the complementary chips and delicious homemade salsa"/>
+              <div class="item-info">
+                <p class="description">Our guests always enjoy the complementary chips and delicious homemade salsa.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/bartender.jpg" data-lightbox="restaurant" data-title="The bartender mixes up an ice-cold Cadillac Margarita. Order a single glass for youself or a pitcher for the whole table!" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/bartender-thumb.jpg" title="Bartender Makes a Cadillac Margarita" alt="Our bartender mixes up an ice-cold Cadillac Margarita"/>
+              <div class="item-info">
+                <p class="description">The bartender mixes up an ice-cold Cadillac Margarita. Order a single glass for youself or a pitcher for the whole table!</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar.jpg" data-lightbox="restaurant" data-title="Enjoy happy hour at Teresa's tequila bar!" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar-thumb.jpg" title="Teresa's Tequila Bar" alt="Enjoy happy hour at the tequila bar!"/>
+              <div class="item-info">
+                <p class="description">Enjoy happy hour at Teresa's tequila bar!</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/matias-family.jpg" data-lightbox="restaurant" data-title="The Matias family thanks you for your love and support over the past three decades..." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/matias-family-thumb.jpg" title="The Matias Family" alt="The Matias Family portrait at Teresa's Mosaic Cafe"/>
+              <div class="item-info">
+                <p class="description">The Matias family thanks you sincerely for your love and support over the past three decades...</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/line-cook.jpg" data-lightbox="restaurant" data-title="Cooks in the kitchen gets busy as the tickets start to stack up!" class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/line-cook-thumb.jpg" title="Line Cook at Teresa's Mosaic Cafe" alt="Cooks in the kitchen get busy as the tickets start to stack up!"/>
+              <div class="item-info">
+                <p class="description">Cooks in the kitchen get busy as the tickets start to stack up!</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess.jpg" data-lightbox="restaurant" data-title="Our hostess clears a table for the next guest." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess-thumb.jpg" title="Restaurant Hostess at Teresa's Mosaic Cafe" alt="Our hostess clears a table for the next guest"/>
+              <div class="item-info">
+                <p class="description">Our hostess clears a table for the next guest.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-guests-02.jpg" data-lightbox="restaurant" data-title="It's hard not to enjoy a hot cup of fresh brewed coffee... try it with cinnamon and sugar for a little Mexican twist." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-guests-02-thumb.jpg" title="Restaurant Guests Drinking Coffee" alt="Try our coffee with cinnamon and sugar for a little Mexican twist"/>
+              <div class="item-info">
+                <p class="description">It's hard not to enjoy a hot cup of fresh brewed coffee... try it with cinnamon and sugar for a little Mexican twist.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking.jpg" data-lightbox="restaurant" data-title="Teresa cleans poblano chiles for a batch of Chicken Chile Rellenos." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking-thumb.jpg" title="Teresa Prepping Poblanos" alt="Teresa cleans poblano chiles for a batch of Chicken Chile Rellenos"/>
+              <div class="item-info">
+                <p class="description">Teresa cleans poblano chiles for a batch of Chicken Chile Rellenos.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-server-03.jpg" data-lightbox="restaurant" data-title="Ask away! Our servers are always happy to answer any questions you might have about the cuisine." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-server-03-thumb.jpg" title="Server Greeting Restaurant Guests" alt="Our servers are always happy to answer any questions you have about the cuisine"/>
+              <div class="item-info">
+                <p class="description">Ask away! Our servers are always happy to answer any questions you might have about the cuisine.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/david-matias-cooking-02.jpg" data-lightbox="restaurant" data-title="The Executive Chef, David Matias, is always hard at work." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/david-matias-cooking-02-thumb.jpg" title="David Matias, Executive Chef of Teresa's Mosaic Cafe" alt="Executive Chef David Matias, is always hard at work"/>
+              <div class="item-info">
+                <p class="description">The Executive Chef, David Matias, is always hard at work.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+            <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tortillera.jpg" data-lightbox="restaurant" data-title="Don't miss your chance to taste a tortilla, hot off the grill, made fresh daily." class="col-md-4 col-sm-6 gallery-item">
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tortillera.jpg" title="Tortillera at Teresa's Mosaic cafe" alt="Don't miss your chance to taste a tortilla, hot off the grill, made fresh daily"/>
+              <div class="item-info">
+                <p class="description">Don't miss your chance to taste a tortilla, hot off the grill, made fresh daily.</p>
+              </div><!--/ .item-info-->
+              <paper-ripple fit></paper-ripple>
+            </a><!--/ .gallery-item-->
+          </div><!--/ .row-->
+          <!------ RESTAURANT GALLERY X-SMALL ------>
+          <div class="row gallery-xs visible-xs">
+            <div class="col-xs-12">
+              <div class="section-heading">
+                <h1 class="title">Dishes & Drinks</h1>
+              </div><!--/ .section-heading-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresas-mosaic-cafe-thumb.jpg" title="Teresa's Mosaic Cafe Restaurant" alt="Teresa's Mosaic Cafe super busy on a Sunday morning!"/>
+              <div class="item-info">
+                <p class="description small">Busy cafe on a Sunday morning!</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mosaic-tabletop-thumb.jpg" title="Mosaic Tabletop Designs" alt="Our beautiful Mosaic Cafe tabletop designs"/>
+              <div class="item-info">
+                <p class="description small">Our beautiful mosaic tabletop designs, thanks to Suzanne Felber of <a href="http://thehomeideafactory.com/Home_Idea_Factory/Welcome.html" alt="The Home Idea Factory homepage">The Home Idea Factory</a>.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/david-matias-cooking-03-thumb.jpg" title="David Matias in the Kitchen" alt="David can't help but smile when he's doing what he loves: cooking!"/>
+              <div class="item-info">
+                <p class="description small">David can't help but smile when he's doing what he loves: cooking!</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-server-01-thumb.jpg" title="Restaurant Server at Teresa's Mosaic Cafe" alt="Roman gets ready to serve a hot meal for our guests"/>
+              <div class="item-info">
+                <p class="description small">Roman gets ready to serve a hot meal for our guests.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/roasting-chiles-01-thumb.jpg" title="Fire Roasting Green Chiles" alt="Mario fire-roasts a fresh batch of green chiles"/>
+              <div class="item-info">
+                <p class="description small">Mario fire-roasts a fresh batch of green chiles.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/roasting-chiles-02-thumb.jpg" title="Fire-Roaster with Chile Verde" alt="The aroma in the air is strong and spicy when we fire-roast our chiles"/>
+              <div class="item-info">
+                <p class="description small">The aroma in the air is strong and spicy when we fire-roast our chiles. You don't want to miss it!</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-server-02-thumb.jpg" title="Restaurant Server Pouring Lemonade" alt="On your next visit, try Teresa's homemade lemonade squeezed fresh every morning"/>
+              <div class="item-info">
+                <p class="description small">On your next visit, try our homemade lemonade squeezed fresh every morning.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/david-matias-cooking-01-thumb.jpg" title="David Matias in the Kitchen" alt="David finishes preparing one of Teresa's specialties: the pollo picadillo"/>
+              <div class="item-info">
+                <p class="description small">David finishes preparing one of his mother's specialties: the pollo picadillo.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-guests-01-thumb.jpg" title="Restaurant Guests at Teresa's Mosaic Cafe" alt="Our guests always enjoy the complementary chips and delicious homemade salsa"/>
+              <div class="item-info">
+                <p class="description small">Our guests always enjoy the complementary chips and delicious homemade salsa.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/bartender-thumb.jpg" title="Bartender Makes a Cadillac Margarita" alt="Our bartender mixes up an ice-cold Cadillac Margarita"/>
+              <div class="item-info">
+                <p class="description small">The bartender mixes up an ice-cold Cadillac Margarita. Order a single glass for youself or a pitcher for the whole table!</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar-thumb.jpg" title="Teresa's Tequila Bar" alt="Enjoy happy hour at the tequila bar!"/>
+              <div class="item-info">
+                <p class="description small">Enjoy happy hour at Teresa's tequila bar!</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/matias-family-thumb.jpg" title="The Matias Family" alt="The Matias Family portrait at Teresa's Mosaic Cafe"/>
+              <div class="item-info">
+                <p class="description small">The Matias family thanks you sincerely for your love and support over the past three decades...</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/line-cook-thumb.jpg" title="Restaurant Hostess at Teresa's Mosaic Cafe" alt="Our hostess clears a table for the next guest"/>
+              <div class="item-info">
+                <p class="description small">Cooks in the kitchen get busy as the tickets start to stack up!</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess-thumb.jpg" title="Restaurant Guests Drinking Coffee" alt="Try our coffee with cinnamon and sugar for a little Mexican twist"/>
+              <div class="item-info">
+                <p class="description small">Our hostess clears a table for the next guest.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-guests-02-thumb.jpg" title="Teresa Prepping Poblanos" alt="Teresa cleans poblano chiles for a batch of Chicken Chile Rellenos"/>
+              <div class="item-info">
+                <p class="description small">It's hard not to enjoy a hot cup of fresh brewed coffee... try it with cinnamon and sugar for a little Mexican twist.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking-thumb.jpg" title="Server Greeting Restaurant Guests" alt="Our servers are always happy to answer any questions you have about the cuisine"/>
+              <div class="item-info">
+                <p class="description small">Teresa cleans poblano chiles for a batch of Chicken Chile Rellenos.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-server-03-thumb.jpg" title="David Matias, Executive Chef of Teresa's Mosaic Cafe" alt="Executive Chef David Matias, is always hard at work"/>
+              <div class="item-info">
+                <p class="description small">Ask away! Our servers are always happy to answer any questions you might have about the cuisine.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/david-matias-cooking-02-thumb.jpg" title="Tortillera at Teresa's Mosaic cafe" alt="Don't miss your chance to taste a tortilla, hot off the grill, made fresh daily"/>
+              <div class="item-info">
+                <p class="description small">Our Executive Chef, David Matias, is always hard at work.</p>
+              </div><!--/ .item-info-->
+              <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tortillera.jpg"/>
+              <div class="item-info">
+                <p class="description small">Don't miss your chance to taste a tortilla, hot off the grill, made fresh daily.</p>
+              </div><!--/ .item-info-->
+            </div><!--/ .col-xs-12-->
+          </div><!--/ .row-->
+        </div><!--/ .tabpanel-->
+      </div><!--/ .tab-content-->
+    </div><!--/ .container-->
+  </section>
+  <!--/ PHOTO GALLERY
+  ================================================== -->
+{% endblock content %}

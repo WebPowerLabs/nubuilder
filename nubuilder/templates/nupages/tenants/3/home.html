@@ -1,0 +1,230 @@
+{% extends "nupages/tenants/3/base.html" %}
+{% load staticfiles i18n %}
+
+{% block content %}
+  <!-- IMAGE SLIDER
+  ================================================== -->
+  <div class="carousel slide home-slider" id="home-slider" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#home-slider" data-slide-to="0" class="active"></li>
+      <li data-target="#home-slider" data-slide-to="1"></li>
+      <li data-target="#home-slider" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img class="img-slider hidden-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/mosaic-cafe-restaurant.jpg" title="Teresa's Mosaic Cafe Restaurant" alt="Guests dining at Teresa's Mosaic Cafe">
+        <div class="carousel-caption hidden-xs">
+          <div class="container">
+            <div class="col-md-8 pull-right right-40">
+              <div class="border-box">
+                <h1 class="title">
+                  Welcome to</br>Teresa's Mosaic Cafe
+                  <span class="frame-bullet top-left">.</span>
+                  <span class="frame-bullet top-right">.</span>
+                  <span class="frame-bullet bottom-left">.</span>
+                  <span class="frame-bullet bottom-right">.</span>
+                </h1><!--/ .title-->
+              </div><!--/ .border-box-->
+            </div><!--/ .col-md-8-->
+          </div><!--/ .container-->
+        </div><!--/ .carousel-caption.hidden-xs-->
+        <img class="img-slider visible-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/mosaic-cafe-restaurant-xs.jpg" title="Teresa's Mosaic Cafe Restaurant" alt="Guests dining at Teresa's Mosaic Cafe">
+        <div class="carousel-caption visible-xs">
+          Welcome to</br>Teresa's Mosaic Cafe
+        </div><!--/ .carousel-caption.visible-xs-->
+      </div><!--/ .item-->
+      <div class="item">
+        <img class="img-slider hidden-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/huevos-rancheros.jpg" title="Huevos Rancheros" alt="Huevos Rancheros: a signature dish at Teresa's Mosaic Cafe">
+        <div class="carousel-caption top hidden-xs">
+          <div class="container">
+            <div class="col-md-8 pull-right text-right">
+              <h1 class="title"><span class="subtitle">Try our world famous</span></br>Huevos Rancheros</h1>
+              <span class="hidden-sm"><a class="btn btn-lg btn-default" href="{% url 'nupages:detail' 'menu' %}" title="Browse the Restaurant Menu">See the Full Menu</a></span>
+              <span class="visible-sm"><a class="btn btn-default" href="{% url 'nupages:detail' 'menu' %}" title="Browse the Restaurant Menu">See the Full Menu</a></span>
+            </div><!--/ .col-md-8-->
+          </div><!--/ .container-->
+        </div><!--/ .carousel-caption.hidden-xs-->
+        <img class="img-slider visible-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/huevos-rancheros-xs.jpg" title="Huevos Rancheros" alt="Huevos Rancheros: a signature dish at Teresa's Mosaic Cafe">
+        <div class="carousel-caption visible-xs">
+          Huevos Rancheros
+        </div><!--/ .carousel-caption.visible-xs-->
+      </div><!--/ .item-->
+      <div class="item">
+        <img class="img-slider hidden-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/chicken-fajitas.jpg" title="Chicken Fajitas" alt="Chicken Fajitas: one of Teresa's Mosaic Cafe's most popular dishes">
+        <div class="carousel-caption hidden-xs">
+          <div class="container">
+            <div class="col-md-8 text-left">
+              <h1 class="title"><span class="subtitle">Or our tender, juicy</span></br>Chicken Fajitas</h1>
+              <span class="hidden-sm"><a class="btn btn-lg btn-primary" href="{% url 'nupages:detail' 'menu' %}" title="Browse the Restaurant Menu">See the Full Menu</a></span>
+              <span class="visible-sm"><a class="btn btn-primary" href="{% url 'nupages:detail' 'menu' %}" title="Browse the Restaurant Menu">See the Full Menu</a></span>
+            </div><!--/ .col-md-8-->
+          </div><!--/ .container-->
+        </div><!--/ .carousel-caption.hidden-xs-->
+        <img class="img-slider visible-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/chicken-fajitas-xs.jpg" title="Chicken Fajitas" alt="Chicken Fajitas: one of Teresa's Mosaic Cafe's most popular dishes">
+        <div class="carousel-caption visible-xs">
+          Chicken Fajitas
+        </div><!--/ .carousel-caption.visible-xs-->
+      </div><!--/ .item-->
+      <div class="item">
+        <img class="img-slider hidden-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/teresa-alfonso-matias.jpg" title="Teresa & Alfonso Matias" alt="Portrait of Teresa & Alfonso Matias, owners of Teresa's Mosaic Cafe">
+        <div class="carousel-caption top hidden-xs">
+          <div class="container">
+            <div class="col-md-8 text-left">
+              <h1 class="title"><span class="subtitle">Meet the owners:</span></br>Teresa & Alfonso</br>Matias</h1>
+              <span class="hidden-sm"><a class="btn btn-lg btn-primary" href="{% url 'nupages:detail' 'about-2' %}" title="Read more about Teresa & Alfonso">Read Their Story</a></span>
+              <span class="visible-sm"><a class="btn btn-primary" href="{% url 'nupages:detail' 'about-2' %}" title="Read more about Teresa & Alfonso">Read Their Story</a></span>
+            </div><!--/ .col-md-8-->
+          </div><!--/ .container-->
+        </div><!--/ .carousel-caption.hidden-xs-->
+        <img class="img-slider visible-xs" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/teresa-alfonso-matias-xs.jpg" title="Teresa & Alfonso Matias" alt="Portrait of Teresa & Alfonso Matias, owners of Teresa's Mosaic Cafe">
+        <div class="carousel-caption visible-xs">
+          Teresa & Alfonso Matias
+        </div><!--/ .carousel-caption.visible-xs-->
+      </div><!--/ .item-->
+    </div><!--/ .carousel-inner-->
+    <!-- Controls -->
+    <a class="left carousel-control" href="#home-slider" role="button" data-slide="prev" title="Previous Slide">
+      <span class="fa fa-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a><!--/ .left-->
+    <a class="right carousel-control" href="#home-slider" role="button" data-slide="next" title="Next Slide">
+      <span class="fa fa-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a><!--/ .right-->
+  </div><!--/ .home-slider-->
+  <!--/ IMAGE SLIDER
+  ================================================== -->
+
+  <!-- FEATURED CONTENT
+  ================================================== -->
+  <section class="featured">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading col-xs-12">
+          <h1 class="title">Featured on Food Network</h1>
+        </div><!--/ .section-heading-->
+      </div><!--/ .row-->
+      <div class="row">
+        <div class="col-md-7">
+          <div class="video-wrapper">
+            <iframe src="//www.youtube.com/embed/MIXKlcYnNOU?controls=2&showinfo=0&rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            <img class="frame-top-left" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/frame-corner1.png">
+            <img class="frame-top-right" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/frame-corner2.png">
+            <img class="frame-bottom-left" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/frame-corner3.png">
+            <img class="frame-bottom-right" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/frame-corner4.png">
+          </div><!--/ .video-wrapper-->
+        </div><!--/ .col-md-6-->
+        <div class="col-md-5">
+          <h2 class="font-base">Throwdown! with Bobby Flay: Huevos Rancheros</h2>
+          <p>"Wow! What an experience it was for us at Teresa’s Mosaic Cafe...to have the pleasure of meeting with and competing against the world famous chef Bobby Flay! When the Throwdown began, it was extremely nerve-wracking yet fulfilling and Teresa & David had to bring everything they have to the cooking table.</p>
+          <p>What fun...we were on a roller coaster ride, for sure! Thank you, Bobby Flay, for such an everlasting memory."</p>
+          <p class="quote text-right"><em>-Teresa & Alfonso Matias</em></p>
+          <a class="btn btn-lg btn-primary" href="{% url 'nupages:detail' 'media' %}" title="Browse our Video Gallery">See More Videos<i class="fa fa-arrow-right"></i></a>
+        </div><!--/ .col-md-6-->
+      </div><!--/ .row-->
+    </div><!--/ .container-->
+  </section>
+  <!--/ FEATURED CONTENT
+  ================================================== -->
+
+  <!-- FEATURED GALLERY
+  ================================================== -->
+  <section class="photo-gallery">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading col-xs-12">
+          <h1 class="title">Photos</h1>
+        </div><!--/ .section-heading-->
+      </div><!--/ .row-->
+      <!------ PREVIEW GALLERY ------>
+      <div class="row gallery-wrapper hidden-xs">
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar.jpg" data-lightbox="home" data-title="Enjoy happy hour at Teresa's tequila bar!" class="col-md-4 col-sm-6 gallery-item">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar-thumb.jpg" title="Tequila Bar" alt="Enjoy happy hour at Teresa's tequila bar!"/>
+          <div class="item-info">
+            <p class="description">Enjoy happy hour at Teresa's tequila bar!</p>
+          </div><!--/ .item-info-->
+          <paper-ripple fit></paper-ripple>
+        </a><!--/ .gallery-item-->
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-fajitas.jpg" data-lightbox="home" data-title="Chicken Fajitas" class="col-md-4 col-sm-6 gallery-item">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-fajitas-thumb.jpg" title="Chicken Fajitas" alt="Chicken Fajitas: Marinated chicken breast sautéed with bell peppers and red onions"/>
+          <div class="item-info">
+            <h4 class="title">Chicken Fajitas</h4>
+            <p class="description">Marinated chicken breast sautéed with bell peppers and red onions.</p>
+          </div><!--/ .item-info-->
+          <paper-ripple fit></paper-ripple>
+        </a><!--/ .gallery-item-->
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess.jpg" data-lightbox="home" data-title="Our hostess clears a table for the next guest." class="col-md-4 col-sm-6 gallery-item">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess-thumb.jpg" title="Restaurant hostess at Teresa's Mosaic Cafe" alt="Our hostess clears a table for the next guest"/>
+          <div class="item-info">
+            <p class="description">Our hostess clears a table for the next guest.</p>
+          </div><!--/ .item-info-->
+          <paper-ripple fit></paper-ripple>
+        </a><!--/ .gallery-item-->
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mexican-hot-chocolate.jpg" data-lightbox="home" data-title="Chocolate Oaxaqueño (Mexican Hot Chocolate)" class="col-md-4 col-sm-6 gallery-item">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mexican-hot-chocolate-thumb.jpg" title="Chocolate Oaxaqueño (Mexican Hot Chocolate)" alt="Chocolate Oaxaqueño: Creamy Oaxacan-style hot chocolate"/>
+          <div class="item-info">
+            <h4 class="title">Chocolate Oaxaqueño</h4>
+            <p class="description">Creamy Oaxacan-style hot chocolate.</p>
+          </div><!--/ .item-info-->
+          <paper-ripple fit></paper-ripple>
+        </a><!--/ .gallery-item-->
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking.jpg" data-lightbox="home" data-title="Teresa cleans poblano chiles for a fresh batch of Chicken Chile Rellenos." class="col-md-4 col-sm-6 gallery-item">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking-thumb.jpg" title="Teresa Matias prepping poblanos" alt="Teresa cleans poblano chiles for a fresh batch of Chicken Chile Rellenos"/>
+          <div class="item-info">
+            <p class="description">Teresa cleans poblano chiles for a fresh batch of Chicken Chile Rellenos.</p>
+          </div><!--/ .item-info-->
+          <paper-ripple fit></paper-ripple>
+        </a><!--/ .gallery-item-->
+        <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/caldo-de-camaron.jpg" data-lightbox="home" data-title="Caldo de Camaron (Shrimp Soup)" class="col-md-4 col-sm-6 gallery-item">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/caldo-de-camaron-thumb.jpg" title="Caldo de Camaron" alt="Caldo de Camaron: Shrimp soup"/>
+          <div class="item-info">
+            <h4 class="title">Caldo de Camaron</h4>
+            <p class="description">Shrimp soup.</p>
+          </div><!--/ .item-info-->
+          <paper-ripple fit></paper-ripple>
+        </a><!--/ .gallery-item-->
+      </div><!--/ .row-->
+      <!------ PREVIEW GALLERY X-SMALL ------>
+      <div class="row gallery-xs visible-xs">
+        <div class="col-xs-12">
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/tequila-bar-thumb.jpg" title="Tequila Bar" alt="Enjoy happy hour at Teresa's tequila bar!"/>
+          <div class="item-info">
+            <p class="description small">Enjoy happy hour at Teresa's tequila bar!</p>
+          </div><!--/ .item-info-->
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/chicken-fajitas-thumb.jpg" title="Chicken Fajitas" alt="Chicken Fajitas: Marinated chicken breast sautéed with bell peppers and red onions"/>
+          <div class="item-info">
+            <h5 class="title">Chicken Fajitas</h5>
+            <p class="description small">Marinated chicken breast sautéed with bell peppers and red onions.</p>
+          </div><!--/ .item-info-->
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/restaurant-hostess-thumb.jpg" title="Restaurant hostess at Teresa's Mosaic Cafe" alt="Our hostess clears a table for the next guest"/>
+          <div class="item-info">
+            <p class="description small">Our hostess clears a table for the next guest.</p>
+          </div><!--/ .item-info-->
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/mexican-hot-chocolate-thumb.jpg" title="Chocolate Oaxaqueño (Mexican Hot Chocolate)" alt="Chocolate Oaxaqueño: Creamy Oaxacan-style hot chocolate"/>
+          <div class="item-info">
+            <h5 class="title">Chocolate Oaxaqueño</h5>
+            <p class="description small">Creamy Oaxacan-style hot chocolate.</p>
+          </div><!--/ .item-info-->
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/teresa-matias-cooking-thumb.jpg" title="Teresa Matias prepping poblanos" alt="Teresa cleans poblano chiles for a fresh batch of Chicken Chile Rellenos"/>
+          <div class="item-info">
+            <p class="description small">Teresa cleans poblano chiles for a fresh batch of Chicken Chile Rellenos.</p>
+          </div><!--/ .item-info-->
+          <img class="img-responsive img-rounded" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/gallery/caldo-de-camaron-thumb.jpg" title="Caldo de Camaron" alt="Caldo de Camaron: Shrimp soup"/>
+          <div class="item-info">
+            <h5 class="title">Caldo de Camaron</h5>
+            <p class="description small">Shrimp soup.</p>
+          </div><!--/ .item-info-->
+        </div><!--/ .col-xs-12-->
+      </div><!--/ .row-->
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+          <a href="{% url 'nupages:detail' 'gallery-2' %}" class="btn btn-lg btn-block btn-primary">See All Photos</a>
+        </div>
+      </div><!--/ .row-->
+    </div><!--/ .container-->
+  </section>
+  <!--/ FEATURED GALLERY
+  ================================================== -->
+{% endblock content %}
