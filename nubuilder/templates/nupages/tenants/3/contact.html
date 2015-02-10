@@ -2,7 +2,9 @@
 {% load staticfiles i18n %}
 
 {% block title %}Contact | Teresa's Mosaic Cafe{% endblock title %}
-{% block description %}Page description goes here!{% endblock description %}
+{% block description %}Give us a call if you have any questions about the menu. Need directions? Hours of operation? All the info you need is right here.{% endblock description %}
+
+{% block ogtitle %}Contact | Teresa's Mosaic Cafe{% endblock ogtitle %}
 
 {% block content %}
   <!-- CONTACT
@@ -10,33 +12,43 @@
   <section class="contact">
     <div class="container">
       <div class="row">
-        <div class="col-md-5 hidden-sm hidden-xs">
-          <h2 class="title">Contact Mosaic</h2>
-          <hr><!--/ .separator-->
-          <address>
-            <p><strong>Teresa's Mosaic Cafe</strong></p>
-            <p>2456 N. Silver Mosaic Dr.<br>
-            Tucson, AZ 85745</p>
-            <!--<a href="mailto:info@bestcompany.com">info@bestcompany.com</a><br>-->
-            <a href="tel:5206244512">(520) 624-4512</a>
-          </address>
-          <div class="social-icons">
-            <a href="//www.facebook.com/pages/Teresas-Mosaic-Cafe/847102188662250"><i class="fa fa-facebook"></i></a>
-            <a href="//plus.google.com/b/101546714645196752269/101546714645196752269"><i class="fa fa-google-plus"></i></a>
-            <a href="//www.yelp.com/biz/teresas-mosaic-cafe-tucson" target="_blank"><i class="fa fa-yelp"></i></a>
-            <a href="//foursquare.com/v/teresas-mosaic-cafe/4b8168e9f964a5205da430e3"><i class="fa fa-foursquare"></i></a>
-          </div><!--/ .social-icons-->
-          <p class="hours">
-            <span>Breakfast</span><br>
-            Mon-Sat 7:30am - 11:00am<br>
-            Sun 7:30am - 12:00pm
-          </p><!--/ .hours-->
-          <p class="hours">
-            <span>Lunch/Dinner</span><br>
-            Mon-Sat 11:00am - 9:00pm<br>
-            Sun 12:00pm - 2:00pm
-          </p><!--/ .hours-->
-        </div><!--/ .col-md-5-->
+        <div itemscope itemtype="http://schema.org/Restaurant">
+          <meta itemprop="name" content="Teresa's Mosaic Cafe">
+          <div class="col-md-5 hidden-sm hidden-xs">
+            <h2 class="title">Contact Mosaic</h2>
+            <hr><!--/ .separator-->
+            <address>
+              <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <p><span itemprop="streetAddress">2456 N. Silver Mosaic Dr.</span><br>
+                <span itemprop="addressLocality">Tucson</span>,
+                <span itemprop="addressRegion">AZ</span>
+                <span itemprop="postalCode">85745</span></p>
+              </div><!--/ itemprop="address"-->
+              <a href="tel:5206244512" itemprop="telephone" title="Call Teresa's Mosaic Cafe">(520) 624-4512</a>
+            </address>
+            <div class="social-icons">
+              <a href="//www.facebook.com/pages/Teresas-Mosaic-Cafe/847102188662250" target="_blank" title="Teresa's Mosaic Cafe Facebook Page"><i class="fa fa-facebook"></i></a>
+              <a href="//plus.google.com/b/101546714645196752269/101546714645196752269" target="_blank" title="Teresa's Mosaic Cafe Google+ Page"><i class="fa fa-google-plus"></i></a>
+              <a href="//www.yelp.com/biz/teresas-mosaic-cafe-tucson" target="_blank" target="_blank" title="Teresa's Mosaic Cafe on Yelp"><i class="fa fa-yelp"></i></a>
+              <a href="//foursquare.com/v/teresas-mosaic-cafe/4b8168e9f964a5205da430e3" target="_blank" title="Teresa's Mosaic Cafe on Foursquare"><i class="fa fa-foursquare"></i></a>
+            </div><!--/ .social-icons-->
+            <p class="hours">
+              <span>Breakfast</span><br>
+              Mon-Sat 7:30am - 11:00am<br>
+              Sun 7:30am - 12:00pm
+            </p><!--/ .hours-->
+            <p class="hours">
+              <span>Lunch/Dinner</span><br>
+              Mon-Sat 11:00am - 9:00pm<br>
+              Sun 12:00pm - 2:00pm
+            </p><!--/ .hours-->
+          </div><!--/ .col-md-5-->
+          <time itemprop="openingHours" datetime="Mo-Sa 7:30-21:00">
+          <time itemprop="openingHours" datetime="Su 7:30-14:00">
+          <meta itemprop="servesCuisine" content="Mexican">
+          <meta itemprop="servesCuisine" content="Breakfast">
+          <meta itemprop="priceRange" content="$$">
+        </div><!--/ itemtype="http://schema.org/Restaurant"-->
         <div class="hidden-md hidden-lg">
           <div class="col-xs-12">
             <h2 class="title">Contact Mosaic</h2>
@@ -44,17 +56,15 @@
           </div><!--/ .col-xs-12-->
           <div class="col-sm-6">
             <address>
-              <p><strong>Teresa's Mosaic Cafe</strong></p>
               <p>2456 N. Silver Mosaic Dr.<br>
               Tucson, AZ 85745</p>
-              <!--<a href="mailto:info@bestcompany.com">info@bestcompany.com</a><br>-->
-              <a href="tel:5206244512">(520) 624-4512</a>
+              <a href="tel:5206244512" title="Call Teresa's Mosaic Cafe">(520) 624-4512</a>
             </address>
             <div class="social-icons">
-              <a href="//www.facebook.com/pages/Teresas-Mosaic-Cafe/847102188662250"><i class="fa fa-facebook"></i></a>
-              <a href="//plus.google.com/b/101546714645196752269/101546714645196752269"><i class="fa fa-google-plus"></i></a>
-              <a href="//www.yelp.com/biz/teresas-mosaic-cafe-tucson" target="_blank"><i class="fa fa-yelp"></i></a>
-              <a href="//foursquare.com/v/teresas-mosaic-cafe/4b8168e9f964a5205da430e3"><i class="fa fa-foursquare"></i></a>
+              <a href="//www.facebook.com/pages/Teresas-Mosaic-Cafe/847102188662250" target="_blank" title="Teresa's Mosaic Cafe Facebook Page"><i class="fa fa-facebook"></i></a>
+              <a href="//plus.google.com/b/101546714645196752269/101546714645196752269" target="_blank" title="Teresa's Mosaic Cafe Google+ Page"><i class="fa fa-google-plus"></i></a>
+              <a href="//www.yelp.com/biz/teresas-mosaic-cafe-tucson" target="_blank" title="Teresa's Mosaic Cafe on Yelp"><i class="fa fa-yelp"></i></a>
+              <a href="//foursquare.com/v/teresas-mosaic-cafe/4b8168e9f964a5205da430e3" target="_blank" title="Teresa's Mosaic Cafe on Foursquare"><i class="fa fa-foursquare"></i></a>
             </div><!--/ .social-icons-->
           </div><!--/ .col-sm-6-->
           <div class="col-sm-6">
@@ -79,7 +89,7 @@
           </div><!--/ .google-map-->
           <script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(32.2515322,-111.01512550000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(32.2515322, -111.01512550000001)});infowindow = new google.maps.InfoWindow({content:"<b>Teresa's Mosaic Cafe</b><br/>2456 N Silver Mosaic Dr<br/>85745 Tucson, AZ" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
           <h4>Directions:</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales bibendum neque in placerat. Praesent et interdum tortor. Aliquam erat volutpat. Vivamus sagittis scelerisque mi a tincidunt. Vivamus commodo augue et leo posuere fringilla. Etiam eget leo sit amet justo lobortis.</p>
+          <p>Head west on Grant Road from Interstate-10. After passing Silverbell Road, make a right to head north on Silver Mosaic Road. Keep driving about 100 feet and you'll see our restaurant on the right, immediately past the McDonalds.</p>
         </div><!--/ .col-md-7-->
       </div><!--/ .row-->
     </div><!--/ .container-->
@@ -99,7 +109,7 @@
             <p class="copyright">2015 © Teresa's Mosaic Cafe. All rights reserved.</p>
           </div><!--/ .col-sm-6-->
           <div class="col-sm-6">
-            <p class="developer">Developed by <a href="http://rabbitholestud.io">Rabbit Hole Studio</a>.</p>
+            <p class="developer">Developed by <a href="http://rabbitholestud.io" target="_blank" title="Rabbit Hole Studio Homepage">Rabbit Hole Studio</a>.</p>
           </div><!--/ .col-sm-6-->
         </div><!--/ .row-->
       </div><!--/ .container-->

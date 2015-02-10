@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% load staticfiles i18n %}
 
-{% block title %}Teresa's Mosaic Cafe{% endblock title %}
-{% block description %}Page description goes here!{% endblock description %}
+{% block title %}Teresa's Mosaic Cafe | Authentic Mexican Cuisine{% endblock title %}
+{% block description %}We pride ourselves on serving you the most authentic Mexican dishes in Tucson, using only the finest ingredients. Live, love, eat and drink...Margaritas!{% endblock description %}
 {% block author %}Zacharia Lorenz{% endblock author %}
 
-{% block ogtitle %}Teresa's Mosaic Cafe{% endblock ogtitle %}
-{% block ogdesc %}Open graph description goes here!{% endblock ogdesc %}
-{% block ogimage %}{% static 'images/2/jackson-tile-design.jpg' %}{% endblock ogimage %}
+{% block ogtitle %}Teresa's Mosaic Cafe | Authentic Mexican Cuisine{% endblock ogtitle %}
+{% block ogdesc %}Serving you the best Sonoran and Oaxacan-style cuisine in Tucson since 1984. We pride ourselves on using only the freshest ingredients in our dishes to deliver an experience you'll never forget!{% endblock ogdesc %}
+{% block ogimage %}https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/og-teresas-mosaic-cafe.jpg{% endblock ogimage %}
 
 {% block css %}
   <!-- Font Icons
@@ -35,6 +35,9 @@
 {% endblock css %}
 
 {% block navbar %}
+<div itemscope itemtype="http://schema.org/Restaurant">
+<meta itemprop="name" content="Teresa's Mosaic Cafe">
+<img itemprop="photo" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/slider/mosaic-cafe-restaurant.jpg" style="display: none;">
   <!-- NAVBAR CONTACT (BROWN)
   ================================================== -->
   <nav class="navbar navbar-default navbar-fixed-top navbar-material navbar-contact" role="navigation">
@@ -42,18 +45,18 @@
       <div class="navbar-header">
         <div class="navbar-brand hidden-sm hidden-xs">
           <div class="logo-wrapper">
-            <a href="{% url 'nupages:detail' 'home-2' %}"><img class="navbar-logo" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/mosaic-cafe-restaurant-logo.png"/></a>
+            <a href="{% url 'nupages:detail' 'home-2' %}" title="Teresa's Mosaic Cafe Homepage"><img class="navbar-logo" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/mosaic-cafe-restaurant-logo.png" itemprop="logo" title="Teresa's Mosaic Cafe restaurant logo"/></a>
           </div><!--/ .logo-wrapper-->
         </div><!--/ .navbar-brand-->
       </div><!--/ .navbar-header-->
       <div class="nav navbar-nav">
         <span class="hidden-sm hidden-xs">
-          <a href="//www.facebook.com/pages/Teresas-Mosaic-Cafe/847102188662250"><i class="fa fa-facebook"></i></a>
-          <a href="//plus.google.com/b/101546714645196752269/101546714645196752269"><i class="fa fa-google-plus"></i></a>
-          <a href="//www.yelp.com/biz/teresas-mosaic-cafe-tucson"><i class="fa fa-yelp"></i></a>
-          <a href="//foursquare.com/v/teresas-mosaic-cafe/4b8168e9f964a5205da430e3"><i class="fa fa-foursquare"></i></a>
+          <a href="//www.facebook.com/pages/Teresas-Mosaic-Cafe/847102188662250" target="_blank" title="Teresa's Mosaic Cafe Facebook Page"><i class="fa fa-facebook"></i></a>
+          <a href="//plus.google.com/b/101546714645196752269/101546714645196752269" target="_blank" title="Teresa's Mosaic Cafe Google+ Page"><i class="fa fa-google-plus"></i></a>
+          <a href="//www.yelp.com/biz/teresas-mosaic-cafe-tucson" target="_blank" title="Teresa's Mosaic Cafe on Yelp"><i class="fa fa-yelp"></i></a>
+          <a href="//foursquare.com/v/teresas-mosaic-cafe/4b8168e9f964a5205da430e3" target="_blank" title="Teresa's Mosaic Cafe on Foursquare"><i class="fa fa-foursquare"></i></a>
         </span><!--/ .hidden-sm.hidden-xs-->
-        <p><a href="tel:5206244512" class="phone">520.624.4512</a></p>
+        <p><a href="tel:5206244512" class="phone" title="Call Teresa's Mosaic Cafe">520.624.4512</a></p>
       </div><!--/ .navbar-nav-->
       <div class="nav navbar-nav navbar-right">
         <p>Mon-Sat 7:30am-9pm<span class="bullet">.</span>Sun 7:30am-2pm</p>
@@ -76,41 +79,40 @@
           <span class="icon-bar"></span>
           <paper-ripple fit></paper-ripple>
         </button><!--/ .navbar-toggle-->
-        <a class="navbar-brand hidden-md hidden-lg" href="{% url 'nupages:detail' 'home-2' %}"><img src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/mosaic-cafe-restaurant-logo2.png"/></a>
+        <a class="navbar-brand hidden-md hidden-lg" href="{% url 'nupages:detail' 'home-2' %}" title="Teresa's Mosaic Cafe Homepage"><img src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/mosaic-cafe-restaurant-logo2.png" title="Teresa's Mosaic Cafe restaurant logo"/></a>
       </div><!--/ .navbar-header-->
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <div class="left-navbar hidden-sm hidden-xs">
           <ul class="nav navbar-nav">
-              <li><a href="{% url 'nupages:detail' 'home-2' %}">Home</a></li>
-              <li><a href="{% url 'nupages:detail' 'about-2' %}">About</a></li>
-              <li><a href="{% url 'nupages:detail' 'menu' %}">Menu</a></li>
+            <li><a href="{% url 'nupages:detail' 'home-2' %}" title="Teresa's Mosaic Cafe Homepage">Home</a></li>
+            <li><a href="{% url 'nupages:detail' 'about-2' %}" title="About | Teresa's Mosaic Cafe">About</a></li>
+            <li><a itemprop="menu" href="{% url 'nupages:detail' 'menu' %}" title="Menu | Teresa's Mosaic Cafe">Menu</a></li>
           </ul><!--/ .navbar-nav-->
         </div><!--/ .left-navbar-->
         <div class="right-navbar hidden-sm hidden-xs">
           <ul class="nav navbar-nav">
-              <li><a href="{% url 'nupages:detail' 'contact' %}">Contact</a></li>
-              <li><a href="{% url 'nupages:detail' 'media' %}">Media</a></li>
-              <li><a href="{% url 'nupages:detail' 'gallery-2' %}">Photos</a></li>
+            <li><a href="{% url 'nupages:detail' 'contact' %}" title="Contact | Teresa's Mosaic Cafe">Contact</a></li>
+            <li><a href="{% url 'nupages:detail' 'media' %}" title="Media | Teresa's Mosaic Cafe">Media</a></li>
+            <li><a href="{% url 'nupages:detail' 'gallery-2' %}" title="Photo Gallery | Teresa's Mosaic Cafe">Photos</a></li>
           </ul><!--/ .navbar-nav-->
         </div><!--/ .right-navbar-->
         <ul class="nav navbar-nav navbar-right hidden-md hidden-lg">
-            <li><a href="{% url 'nupages:detail' 'home-2' %}">Home
+            <li><a href="{% url 'nupages:detail' 'home-2' %}" title="Teresa's Mosaic Cafe Homepage">Home
               <paper-ripple fit></paper-ripple>
             </a></li>
-            <li><a href="{% url 'nupages:detail' 'about-2' %}">About
+            <li><a href="{% url 'nupages:detail' 'about-2' %}" title="About | Teresa's Mosaic Cafe">About
               <paper-ripple fit></paper-ripple>
             </a></li>
-            <li><a href="{% url 'nupages:detail' 'menu' %}">Menu
+            <li><a href="{% url 'nupages:detail' 'menu' %}" title="Menu | Teresa's Mosaic Cafe">Menu
               <paper-ripple fit></paper-ripple>
             </a></li>
-            <li><a href="{% url 'nupages:detail' 'contact' %}">Contact
+            <li><a href="{% url 'nupages:detail' 'contact' %}" title="Contact | Teresa's Mosaic Cafe">Contact
               <paper-ripple fit></paper-ripple>
             </a></li>
-            <li><a href="{% url 'nupages:detail' 'media' %}">Media
+            <li><a href="{% url 'nupages:detail' 'media' %}" title="Media | Teresa's Mosaic Cafe">Media
               <paper-ripple fit></paper-ripple>
             </a></li>
-            <li><a href="{% url 'nupages:detail' 'gallery-2' %}">Photos
+            <li><a href="{% url 'nupages:detail' 'gallery-2' %}" title="Photo Gallery | Teresa's Mosaic Cafe">Photos
               <paper-ripple fit></paper-ripple>
             </a></li>
         </ul><!--/ .navbar-right-->
@@ -119,6 +121,7 @@
   </nav>
   <!--/ NAVBAR PRIMARY (TURQUOISE)
   ================================================== -->
+</div><!--/ itemtype="http://schema.org/Restaurant"-->
 {% endblock navbar %}
 
 {% block content %}
@@ -132,26 +135,36 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-6 col-xs-offset-3 widget">
-            <img class="img-responsive large-logo" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/mosaic-tree-logo.png"/>
+            <img class="img-responsive large-logo" src="https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/mosaic-tree-logo.png" title="Teresa's Mosaic Cafe tree logo"/>
           </div><!--/ .widget-->
           <div class="clearfix visible-xs"></div>
-          <div class="col-md-4 col-sm-5 widget widget-contact">
-            <h2 class="title">Contact Mosaic</h2>
-            <hr><!--/ .separator-->
-            <address>
-              <p><strong>Teresa's Mosaic Cafe</strong></p>
-              <p>2456 N. Silver Mosaic Dr.<br>
-              Tucson, AZ 85745</p>
-              <!--<a href="mailto:info@bestcompany.com">info@bestcompany.com</a><br>-->
-              <a href="tel:5206244512">(520) 624-4512</a>
-            </address>
-            <div class="social-icons">
-              <a href="//www.facebook.com/pages/Teresas-Mosaic-Cafe/847102188662250"><i class="fa fa-facebook"></i></a>
-              <a href="//plus.google.com/b/101546714645196752269/101546714645196752269"><i class="fa fa-google-plus"></i></a>
-              <a href="//www.yelp.com/biz/teresas-mosaic-cafe-tucson"><i class="fa fa-yelp"></i></a>
-              <a href="//foursquare.com/v/teresas-mosaic-cafe/4b8168e9f964a5205da430e3"><i class="fa fa-foursquare"></i></a>
-            </div><!--/ .social-icons-->
-          </div><!--/ .widget-->
+          <div itemscope itemtype="http://schema.org/Restaurant">
+            <div class="col-md-4 col-sm-5 widget widget-contact">
+              <h2 class="title">Contact Mosaic</h2>
+              <hr><!--/ .separator-->
+              <address>
+                <p itemprop="name"><strong>Teresa's Mosaic Cafe</strong></p>
+                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <p><span itemprop="streetAddress">2456 N. Silver Mosaic Dr.</span><br>
+                  <span itemprop="addressLocality">Tucson</span>,
+                  <span itemprop="addressRegion">AZ</span>
+                  <span itemprop="postalCode">85745</span></p>
+                </div><!--/ itemprop="address"-->
+                <a href="tel:5206244512" itemprop="telephone" title="Call Teresa's Mosaic Cafe">(520) 624-4512</a>
+              </address>
+              <time itemprop="openingHours" datetime="Mo-Sa 7:30-21:00">
+              <time itemprop="openingHours" datetime="Su 7:30-14:00">
+              <meta itemprop="servesCuisine" content="Mexican">
+              <meta itemprop="servesCuisine" content="Breakfast">
+              <meta itemprop="priceRange" content="$$">
+              <div class="social-icons">
+                <a href="//www.facebook.com/pages/Teresas-Mosaic-Cafe/847102188662250" target="_blank" title="Teresa's Mosaic Cafe Facebook Page"><i class="fa fa-facebook"></i></a>
+                <a href="//plus.google.com/b/101546714645196752269/101546714645196752269" target="_blank" title="Teresa's Mosaic Cafe Google+ Page"><i class="fa fa-google-plus"></i></a>
+                <a href="//www.yelp.com/biz/teresas-mosaic-cafe-tucson" target="_blank" title="Teresa's Mosaic Cafe on Yelp"><i class="fa fa-yelp"></i></a>
+                <a href="//foursquare.com/v/teresas-mosaic-cafe/4b8168e9f964a5205da430e3" target="_blank" title="Teresa's Mosaic Cafe on Foursquare"><i class="fa fa-foursquare"></i></a>
+              </div><!--/ .social-icons-->
+            </div><!--/ .widget-->
+          </div><!--/ itemtype="http://schema.org/Restaurant"-->
         </div><!--/ .row-->
       </div><!--/ .container-->
     </div><!--/ .footer-widgets-->
@@ -162,7 +175,7 @@
             <p class="copyright">2015 © Teresa's Mosaic Cafe. All rights reserved.</p>
           </div><!--/ .col-sm-6-->
           <div class="col-sm-6">
-            <p class="developer">Developed by <a href="//rabbit-hole-studios.com">Rabbit Hole Studio</a>.</p>
+            <p class="developer">Developed by <a href="//rabbit-hole-studios.com" target="_blank" title="Rabbit Hole Studio Homepage">Rabbit Hole Studio</a>.</p>
           </div><!--/ .col-sm-6-->
         </div><!--/ .row-->
       </div><!--/ .container-->

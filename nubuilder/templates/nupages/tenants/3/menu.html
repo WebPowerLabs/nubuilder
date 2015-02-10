@@ -2,13 +2,17 @@
 {% load staticfiles i18n %}
 
 {% block title %}Menu | Teresa's Mosaic Cafe{% endblock title %}
-{% block description %}Page description goes here!{% endblock description %}
+{% block description %}Browse all of our traditional Sonoran/Oaxacan-style dishes and cocktails. Don't forget to check out our world famous Huevos Rancheros or Mole Negro!{% endblock description %}
+
+{% block ogtitle %}Menu | Teresa's Mosaic Cafe{% endblock ogtitle %}
+{% block ogimage %}https://s3-us-west-2.amazonaws.com/mosaic-cafe/images/og-mosaic-cafe-menu.jpg{% endblock ogimage %}
+{% block ogdesc %}Browse all of our traditional Sonoran/Oaxacan-style dishes and cocktails. Don't forget to check out our world famous Huevos Rancheros or Mole Negro!{% endblock ogdesc %}
 
 {% block content %}
   <!-- RESTAURANT MENU
   ================================================== -->
   <section class="menu">
-    <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/media/printable-restaurant-menu.pdf" download class="print-menu hidden-xs">Download the Printable Menu</a>
+    <a href="https://s3-us-west-2.amazonaws.com/mosaic-cafe/media/printable-restaurant-menu.pdf" download class="print-menu hidden-xs" title="Download our printable restaurant menu">Download the Printable Menu</a>
     <div class="container">
       <div class="row hidden-xs">
         <div class="section-heading col-xs-12">
@@ -19,15 +23,15 @@
         <!------ MENU NAVIGATION BUTTONS ------>
         <div class="row">
           <ul class="nav-tab-content hidden-xs" role="tablist">
-            <li role="presentation" class="col-sm-4"><a href="#breakfast" class="btn-lg btn-block btn-menus" aria-controls="breakfast" role="tab" data-toggle="tab">
+            <li role="presentation" class="col-sm-4"><a href="#breakfast" class="btn-lg btn-block btn-menus" aria-controls="breakfast" role="tab" data-toggle="tab" title="View the Breakfast Menu">
               <i class="flaticon-breakfast"></i> Breakfast
               <paper-ripple fit></paper-ripple>
             </a></li><!--/ .col-sm-4-->
-            <li role="presentation" class="col-sm-4 active"><a href="#lunch-dinner" class="btn-lg btn-block btn-menus" aria-controls="lunch-dinner" role="tab" data-toggle="tab">
+            <li role="presentation" class="col-sm-4 active"><a href="#lunch-dinner" class="btn-lg btn-block btn-menus" aria-controls="lunch-dinner" role="tab" data-toggle="tab" title="View the Lunch/Dinner Menu">
               <i class="flaticon-dinner"></i> Lunch & Dinner
               <paper-ripple fit></paper-ripple>
             </a></li><!--/ .col-sm-4-->
-            <li role="presentation" class="col-sm-4"><a href="#drinks" class="btn-lg btn-block btn-menus" aria-controls="drinks" role="tab" data-toggle="tab">
+            <li role="presentation" class="col-sm-4"><a href="#drinks" class="btn-lg btn-block btn-menus" aria-controls="drinks" role="tab" data-toggle="tab" title="View the Drink Menu">
               <i class="flaticon-drinks"></i> Drinks
               <paper-ripple fit></paper-ripple>
             </a></li><!--/ .col-sm-4-->
@@ -37,15 +41,15 @@
         <nav class="navbar navbar-default navbar-fixed-bottom navbar-tab-content visible-xs" role="navigation">
           <div class="container-fluid">
             <ul class="nav navbar-nav">
-              <li role="presentation"><a href="#breakfast" aria-controls="breakfast" role="tab" data-toggle="tab">
+              <li role="presentation"><a href="#breakfast" aria-controls="breakfast" role="tab" data-toggle="tab" title="View the Breakfast Menu">
                 <i class="flaticon-breakfast"></i>
                 <paper-ripple fit></paper-ripple>
               </a></li>
-              <li role="presentation" class="active"><a href="#lunch-dinner" aria-controls="lunch-dinner" role="tab" data-toggle="tab">
+              <li role="presentation" class="active"><a href="#lunch-dinner" aria-controls="lunch-dinner" role="tab" data-toggle="tab" title="View the Lunch/Dinner Menu">
                 <i class="flaticon-dinner"></i>
                 <paper-ripple fit></paper-ripple>
               </a></li>
-              <li role="presentation"><a href="#drinks" aria-controls="drinks" role="tab" data-toggle="tab">
+              <li role="presentation"><a href="#drinks" aria-controls="drinks" role="tab" data-toggle="tab" title="View the Drink Menu">
                 <i class="flaticon-drinks"></i>
                 <paper-ripple fit></paper-ripple>
               </a></li>
