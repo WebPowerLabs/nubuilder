@@ -22,12 +22,12 @@
 {% block css %}
   <!-- Font Icons
   ================================================== -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><!-- Font Awesome -->
-  <link href="{% static 'fonts/3/flaticon/flaticon.css' %}" rel="stylesheet"><!-- Flaticon -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="{% static 'fonts/3/flaticon/flaticon.css' %}" rel="stylesheet">
   <!-- Theme Fonts
   ================================================== -->
-  <link rel="stylesheet" href="{% static 'fonts/bremen/bremen.css' %}"><!-- Bremen -->
-  <link href='//fonts.googleapis.com/css?family=Josefin+Sans:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'><!-- Josefin Sans -->
+  <link rel="stylesheet" href="{% static 'fonts/bremen/bremen.css' %}">
+  <link href='//fonts.googleapis.com/css?family=Josefin+Sans:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
   <!-- Lightbox Gallery
   ================================================== -->
   <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
@@ -39,10 +39,20 @@
   <!-- Theme Styles from Bootstrap Builder
   ================================================== -->
   <link rel="stylesheet" href="{% static 'css/mosaic-cafe.min.css' %}">
+{% endblock css %}
 
+{% block analytics %}
   <!-- Google Analytics
   ================================================== -->
-{% endblock css %}
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-59614875-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+{% endblock analytics %}
 
 {% block navbar %}
 <div itemscope itemtype="http://schema.org/Restaurant">
@@ -187,7 +197,7 @@
             <p class="copyright">2015 © Teresa's Mosaic Cafe. All rights reserved.</p>
           </div><!--/ .col-sm-6-->
           <div class="col-sm-6">
-            <p class="developer">Developed by <a href="//rabbit-hole-studios.com" target="_blank" title="Rabbit Hole Studio Homepage">Rabbit Hole Studio</a>.</p>
+            <p class="developer">Developed by <a href="//webpowerlabs.com" target="_blank" title="Web Power Labs Homepage">Web Power Labs</a>. Designed by <a href="//rabbit-hole-studios.com" target="_blank" title="Rabbit Hole Studio Homepage">Rabbit Hole Studio</a>.</p>
           </div><!--/ .col-sm-6-->
         </div><!--/ .row-->
       </div><!--/ .container-->
